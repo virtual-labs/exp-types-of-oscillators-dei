@@ -1,0 +1,164 @@
+
+/home/runner/work/exp-types-of-oscillators-dei/exp-types-of-oscillators-dei/experiment/simulation/main1.js
+     2:10  warning  'T06_SHO2' is defined but never used                no-unused-vars
+     3:16  warning  'EJSS_CORE' is not defined                          no-undef
+     5:7   warning  '_isPlaying' is assigned a value but never used     no-unused-vars
+    10:7   warning  '_tools' is assigned a value but never used         no-unused-vars
+    11:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+    12:20  warning  'EJSS_INTERFACE' is not defined                     no-undef
+    13:26  warning  'EJSS_INTERFACE' is not defined                     no-undef
+    14:19  warning  'EJSS_TOOLS' is not defined                         no-undef
+    15:36  warning  'EJSS_TOOLS' is not defined                         no-undef
+    26:12  warning  '_update' is defined but never used                 no-unused-vars
+    27:12  warning  '_initialize' is defined but never used             no-unused-vars
+    28:12  warning  '_setFPS' is defined but never used                 no-unused-vars
+    29:12  warning  '_setDelay' is defined but never used               no-unused-vars
+    30:12  warning  '_setStepsPerDisplay' is defined but never used     no-unused-vars
+    31:12  warning  '_setUpdateView' is defined but never used          no-unused-vars
+    32:12  warning  '_setAutoplay' is defined but never used            no-unused-vars
+    33:12  warning  '_println' is defined but never used                no-unused-vars
+    35:12  warning  '_breakAfterThisPage' is defined but never used     no-unused-vars
+    39:12  warning  '_saveText' is defined but never used               no-unused-vars
+    41:12  warning  '_saveState' is defined but never used              no-unused-vars
+    43:12  warning  '_saveImage' is defined but never used              no-unused-vars
+    45:12  warning  '_readState' is defined but never used              no-unused-vars
+    47:12  warning  '_readText' is defined but never used               no-unused-vars
+    49:12  warning  '_getStringProperty' is defined but never used      no-unused-vars
+    55:12  warning  '_setPageEnabled' is defined but never used         no-unused-vars
+    93:12  warning  '_serialize' is defined but never used              no-unused-vars
+   123:12  warning  '_serializePublic' is defined but never used        no-unused-vars
+   199:12  warning  '_unserializePublic' is defined but never used      no-unused-vars
+   209:12  warning  '_unserialize' is defined but never used            no-unused-vars
+   249:29  warning  '_isEPub' is not defined                            no-undef
+   250:30  warning  '_isEPub' is not defined                            no-undef
+   283:19  warning  '_isEPub' is not defined                            no-undef
+   307:12  warning  '_automaticResetSolvers' is defined but never used  no-unused-vars
+   315:3   warning  '_getODE' is not defined                            no-undef
+   320:12  warning  '_getEventSolver' is defined but never used         no-unused-vars
+   321:15  warning  '_getODE' is not defined                            no-undef
+   326:12  warning  '_setSolverClass' is defined but never used         no-unused-vars
+   327:15  warning  '_getODE' is not defined                            no-undef
+   331:58  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   332:58  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   333:58  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   334:58  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   335:58  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   336:58  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   337:62  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   338:62  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   339:59  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   340:58  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   341:58  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   342:58  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   350:25  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   370:23  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   400:13  warning  '__j' is assigned a value but never used            no-unused-vars
+   401:13  warning  '__n' is assigned a value but never used            no-unused-vars
+   452:43  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   457:43  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   461:13  warning  '__i' is assigned a value but never used            no-unused-vars
+   467:41  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   475:11  warning  '__index' is assigned a value but never used        no-unused-vars
+   477:13  warning  '__i' is assigned a value but never used            no-unused-vars
+   508:13  warning  '__i' is assigned a value but never used            no-unused-vars
+   510:13  warning  'x' is assigned a value but never used              no-unused-vars
+   511:13  warning  'v' is assigned a value but never used              no-unused-vars
+   512:13  warning  't' is assigned a value but never used              no-unused-vars
+   518:13  warning  '__i' is assigned a value but never used            no-unused-vars
+   525:13  warning  '__j' is assigned a value but never used            no-unused-vars
+   526:13  warning  '__n' is assigned a value but never used            no-unused-vars
+   535:26  warning  'functions' is not defined                          no-undef
+   535:42  warning  'functions' is not defined                          no-undef
+   549:55  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   551:61  warning  'EJSS_ODE_SOLVERS' is not defined                   no-undef
+   559:13  warning  '__i' is assigned a value but never used            no-unused-vars
+   561:13  warning  'x' is assigned a value but never used              no-unused-vars
+   562:13  warning  'v' is assigned a value but never used              no-unused-vars
+   573:13  warning  '__i' is assigned a value but never used            no-unused-vars
+   580:13  warning  '__j' is assigned a value but never used            no-unused-vars
+   581:13  warning  '__n' is assigned a value but never used            no-unused-vars
+   603:12  warning  '_historic_x' is defined but never used             no-unused-vars
+   608:12  warning  '_historic_v' is defined but never used             no-unused-vars
+   634:91  warning  '_isEPub' is not defined                            no-undef
+   635:56  warning  '_data' is defined but never used                   no-unused-vars
+   635:62  warning  '_info' is defined but never used                   no-unused-vars
+   649:61  warning  '_data' is defined but never used                   no-unused-vars
+   649:67  warning  '_info' is defined but never used                   no-unused-vars
+   663:60  warning  '_data' is defined but never used                   no-unused-vars
+   663:66  warning  '_info' is defined but never used                   no-unused-vars
+   677:66  warning  '_data' is defined but never used                   no-unused-vars
+   677:72  warning  '_info' is defined but never used                   no-unused-vars
+   709:53  warning  '_data' is defined but never used                   no-unused-vars
+   709:59  warning  '_info' is defined but never used                   no-unused-vars
+   722:57  warning  '_data' is defined but never used                   no-unused-vars
+   722:63  warning  '_info' is defined but never used                   no-unused-vars
+   727:71  warning  '_data' is defined but never used                   no-unused-vars
+   727:77  warning  '_info' is defined but never used                   no-unused-vars
+   733:70  warning  '_data' is defined but never used                   no-unused-vars
+   733:76  warning  '_info' is defined but never used                   no-unused-vars
+   740:66  warning  '_data' is defined but never used                   no-unused-vars
+   740:72  warning  '_info' is defined but never used                   no-unused-vars
+   747:57  warning  '_data' is defined but never used                   no-unused-vars
+   747:63  warning  '_info' is defined but never used                   no-unused-vars
+   790:15  warning  'EJSS_CORE' is not defined                          no-undef
+   798:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   801:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   808:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   811:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   815:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   821:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   826:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   831:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   836:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   839:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   844:23  warning  'EJSS_DRAWING2D' is not defined                     no-undef
+   858:23  warning  'EJSS_DRAWING2D' is not defined                     no-undef
+   864:23  warning  'EJSS_DRAWING2D' is not defined                     no-undef
+   870:23  warning  'EJSS_DRAWING2D' is not defined                     no-undef
+   877:23  warning  'EJSS_DRAWING2D' is not defined                     no-undef
+   884:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   889:23  warning  'EJSS_DRAWING2D' is not defined                     no-undef
+   899:23  warning  'EJSS_DRAWING2D' is not defined                     no-undef
+   906:23  warning  'EJSS_DRAWING2D' is not defined                     no-undef
+   914:23  warning  'EJSS_DRAWING2D' is not defined                     no-undef
+   922:23  warning  'EJSS_DRAWING2D' is not defined                     no-undef
+   930:23  warning  'EJSS_DRAWING2D' is not defined                     no-undef
+   941:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   946:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   951:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   955:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   961:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   966:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   971:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   976:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   981:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   985:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   990:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+   997:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1002:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1006:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1009:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1013:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1017:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1023:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1030:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1034:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1038:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1042:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1048:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1055:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1059:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1062:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1066:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1070:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1076:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1083:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1087:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1091:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1095:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1101:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1108:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+  1112:23  warning  'EJSS_INTERFACE' is not defined                     no-undef
+
+✖ 159 problems (0 errors, 159 warnings)
+
