@@ -3,7 +3,7 @@
 
 <b>Discipline | <b>Fill your discipline name here
 :--|:--|
-<b> Lab | <b> Fill your lab name here
+<b> Lab | <b> 
 <b> Experiment|     <b> Fill your experiment name and number here
 
 ### About the Experiment 
@@ -20,5 +20,5 @@ Fill a brief description of this experiment here
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
+1 | Sania Verma | . | . | . | .
 2 | . | . | . | . | .
