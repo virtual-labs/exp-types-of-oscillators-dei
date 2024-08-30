@@ -3,8 +3,8 @@
 
 <b>Discipline | <b>Fill your discipline name here
 :--|:--|
-<b> Lab | <b> 
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> Waves, Optics and Quantum Mechanics
+<b> Experiment|     <b> Types of oscillators: simple harmonic, damped and forced
 
 ### About the Experiment 
 
@@ -20,5 +20,4 @@ Fill a brief description of this experiment here
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | Sania Verma | . | . | . | .
-2 | . | . | . | . | .
+1 | Sania Verma | Student | Department of Mechanical Engineering | Dayalbagh Educational Institute(D.E.I.) | saniav2711@gmail.com
