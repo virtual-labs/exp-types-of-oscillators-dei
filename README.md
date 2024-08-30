@@ -13,7 +13,7 @@ Free Oscillators: i) Simple Harmonic Motion(S.H.M)
 Damped Oscillators: i) Under Damping ii) Critical Damping iii Over Damping
 Forced Oscillators
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Sania Verma | <b> Professor Sukhdev Roy
 :--|:--|
 <b> Institute | <b>  Dayalbagh Educational Institute(D.E.I.)
 <b> Email id|     <b>  saniav2711@gmail.com
