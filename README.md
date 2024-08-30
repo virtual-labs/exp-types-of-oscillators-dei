@@ -8,7 +8,10 @@
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+The experiment is designed to study the following oscillations:
+Free Oscillators: i) Simple Harmonic Motion(S.H.M)
+Damped Oscillators: i) Under Damping ii) Critical Damping iii Over Damping
+Forced Oscillators
 
 <b>Name of Developer | <b> Fill the name of experiment owner here 
 :--|:--|
