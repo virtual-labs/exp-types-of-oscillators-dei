@@ -17,7 +17,7 @@ Forced Oscillators
 :--|:--|
 <b> Institute | <b>  Dayalbagh Educational Institute(D.E.I.)
 <b> Email id|     <b>  saniav2711@gmail.com
-<b> Department |  Department of Mechanical Engineering
+<b> Department |  Mechanical Engineering
 
 ### Contributors List
 
