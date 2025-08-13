@@ -1,114 +1,221 @@
-<p> 
-<h3>Simple Harmonic Motion</h3><br>
-<p>Simple harmonic motion (SHM) is a type of oscillating motion.When there is a slight disturbance from their equilibrium or rest postion, it will oscillate with harmonically This is the most fundamental vibration of a single particle or one-dimensional system. A small displacement x from its equilibrium position sets up a restoring force which is proportional to x acting in a direction towards the equilibrium position</p></p>
-<p>
-F = -kx<br></p>
-<p>
-It is used to model many situations in real life where a mass oscillates about an equilibrium point. 
-<ol class="examples">
-<li>Simple Pendulum </li>
-<p> It is a simple pendulum, a mass m swinging at the end of a light rigid rod of length 'l'.</p>
-<!-- <img src="{{url_for('static', filename='img/simple.gif')}}" alt="pendulum" width="300px" height="200px"> -->
-<li>Mass attached to the spring</li>
-<p>A mass fixed to a wall via a spring of stiffness s sliding to and fro in the `x` direction on a frictionless plane.</p>
-<!-- <img src="{{url_for('static', filename='img/spring mass system.gif')}}" alt="spring mass" width="100px" height="200px"> -->
-<br>
-<!-- <img src="{{url_for('static', filename='img/mass spring system2.gif')}}" alt="spring mass" width="300px" height="200px" ><br> -->
-<li>U-Tube example using shm motion</li>
-<p>
-Motion of an oscillating liquid column in a U tube is SHM with period, T = 2πgh,where h is the height of liquid column in one arm of U tube in equilibrium position of liquid Therefore, T is independent of density of liquid.</p>
-<li>LC Oscillator</li>
-<p>It is an electrical circuit, an inductance L connected across a capacitance C carrying a charge q.</p>
-</ol>
-<p>The governing equation for the  motion is :-</p> 
-<img src="images/eq1.png" alt="equation" width="400px"> 
-<ul style="None">
-<li>m: mass of the ball in kg , m=1kg </li><br>
-<li>b: damping factor in (Ns/m)</li><br>
-<li>k : spring constant in N/m</li><br>
-<li>F<sub>o</sub>: Force in Newton(N)</li><br>
-<li>ω: driven frequency in rad/sec</li><br>
-<li>t: time period</li><br>
-<li>φ: phase angle</li><br>
-</ul>
+# Free Oscillators
+
+Free oscillations occur when the motion is maintained by gravitational or elastic restoring forces, such as the swinging motion of a pendulum or the vibration of an elastic rod.  
+The simplest type of vibrating motion is **undamped free vibration**.
+
+---
+
+## Examples
+- Oscillations of simple pendulums  
+- Oscillations of objects connected to a horizontal spring  
+- Sound produced by tuning forks in short distances  
+- Notes of musical instruments, organ pipes, etc.
+
+**Example:** Horizontal spring mass system, tuning fork
+
+---
+
+## Nature of Free Oscillations
+- Amplitude and frequency of a freely vibrating body remain constant.  
+- They do not lose or gain any energy in the process.  
+- Free vibrations for sound can occur only in a vacuum.  
+- Such vibrations are ideal conditions of oscillations, practically not realizable.
+
+---
+
+**In this type of motion:**  
+\(F_o = 0\), \(b = 0\) (damping factor)
+
+So the equation is:  
+<p align="center">
+<img src="images/eq2.png" width="400px" alt="equation">
 </p>
-</p>
-<h2><u>Free Oscillators</u> </h2>
-<ul type="None">
-<li><p>Free oscilations occurs when the motion is maintained by gravitational or elastic restoring forces, such as the swinging motion of a pendulum or the vibration of an elastic rod.The simplest type of vibrating motion is undamped free vibration </p></li>
-<br>
-<li><p> Some examples of free oscillations are oscillations of simple pendulum oscillations of object connected to a horizontal spring,sound produced by tuning fork in short distance, notes of musical instruments, organ pipe, etc.</p> </li>
-<p><strong>Example:</strong> Horizontal spring mass system ,  Tuning fork</p>	
-<li><p><u><strong>Nature of free oscillations</strong></u> <br>
-Amplitude and frequency of a freely vibrating body remains constant.They do not lose or gain any energy in the process.Free vibrations for sound can occur only in vacuum.Such vibrations are ideal conditions of oscillations.It is not possible to practically realize free oscillations.</p></li>
-<li><p> In this type of motion F<sub>o</sub>, b (damping factor)=0<br> So the equation(1) is :<br>
-<img src="images/eq2.png" width=400px alt="equation" ><br>
-<p> where, </p>
-<li><p >The solution of the equation is:- Acos(ωt+φ) <br>which represents simple harmonic motion </p></li>
-<li><p><strong><div class="cmath" ><p>ω<sub>o</sub> is the natural frequency of the system:
-<br>
-<img src="images/eq6.png" alt="equation" width=50px></p>
-</div></p> </li></strong>
-</ul>
-<br> </p>
-<h2><u>Damped Oscillators</u> </h2>
-<ul type="None">
-<li><p>A damping oscillation is one in which the moving particle gradually loses its kinetic energy on interaction with resistive forces like air or friction.Due to this resistance offered by external forces,the displacement of a particle slowly reduces with time and ultimately reaches its state of rest. </li></p>
-</li>
-<li><p><strong>Example:</strong>A simple pendulum oscillating under natural conditions. Shock absorbers in vehicles are an example of damping devices that reduce the vehicle’s vibrations.</p></li>
-<p> Shock Absorbers</p>	
-<p>If the damping force F<sub>o</sub> ,is proportional to the velocity v<sub>o</sub>, with a damping constant b, then<br>
-<p style = "padding:10px; border: 2px solid red; margin-right:700px; text-align: center;">F<sub>o</sub> = -b𝑣<sub>o</sub></p>The equation of motion (1) becomes:</p>
+
+**Solution:** \(A \cos(\omega t + \phi)\) — represents simple harmonic motion.
+
+---
+
+**Natural Frequency:**
 <p>
-<img src="images/fourth.png" alt="shock absorbers" width=400px ></p>
-									
-<p><img src="images/eq7.png" alt="shock absorbers" width=400px ></p>
-<p><img src="images/eq3.png" alt="shock absorbers" width=400px ></p>
-<p> ω<sub>o</sub> is natural frequency of the damped system and  ω<sup>'</sup> is the frequency of the damped oscillator.<br>
-<p><img src="images/eq8.png" alt="shock absorbers" width=400px ></p>
+<img src="images/eq6.png" width="50px" alt="equation">
 </p>
-<p> b<sup>2</sup> = 4km <br>
-b =  2√2							
+
+---
+
+# Simple Harmonic Motion (SHM)
+
+Simple harmonic motion is a type of oscillating motion.  
+When there is a slight disturbance from the equilibrium position, the system oscillates harmonically.  
+It is the most fundamental vibration of a single particle or one-dimensional system.
+
+A small displacement \(x\) from equilibrium sets up a restoring force proportional to \(x\), acting towards equilibrium:
+
+\[
+F = -kx
+\]
+
+SHM is used to model situations where a mass oscillates about an equilibrium point.
+
+---
+
+## Examples of SHM
+
+1. **Simple Pendulum**  
+   A mass *m* swinging at the end of a light rigid rod of length \(l\).
+
+2. **Mass Attached to a Spring**  
+   A mass fixed to a wall via a spring of stiffness *s*, sliding in the x-direction on a frictionless plane.
+
+3. **U-Tube**  
+   Motion of an oscillating liquid column in a U-tube:  
+   \[
+   T = 2\pi\sqrt{\frac{l}{g}}
+   \]
+   where \(h\) is the height of the liquid column in one arm.
+
+4. **LC Oscillator**  
+   An inductance *L* connected across a capacitance *C* carrying a charge *q*.
+
+---
+
+**Governing Equation:**
+<p align="center">
+<img src="images/eq1.png" width="400px" alt="equation">
 </p>
-<p>Under certain conditions damping is of three types:-</p>
-<strong><u><p>1.Under Damping</p></u></strong>
-<p>When damping is small, the system vibrates at first approximately as if there were no damping, but the amplitude of the solutions decreases exponentially.<br>
-<strong>Example :</strong> a swinging pendulum decreasing in amplitude until it comes to a stop.<br>
-<p><u>Under damped oscillations:</u> b < 2√2</p>  <br>
-<p><img src="images/eq99.png" alt="shock absorbers" width="400px"></p>  				<p>b: damping factor ,<br>
-m : mass of the ball in kg.<br>
-and amplitude is given by:-</p>
-<p><img src="images/eq3.png" alt="shock absorbers" width="400px"></p>  
-<strong><u><p>2.Critical Damping</p></u></strong>
-<p>When a critically damped oscillator is displaced from the equilibrium,it will return to rest at its equilibrium position in the shortest possible time without oscillating.Critical damping occurs when the position of the mass will asymptotically approach 0. Depending on the initial velocity, it will either go monotonically to zero or reach some maximum displacement before it turns around and goes to 0.<br><br>
-<strong>Example: </strong>car suspension systems prevent the car from oscillating after travelling over a bump in the road.<br><u><p>Critically damped oscillations:</u> b = 2.8  </p><br>
-<p><img src="{{url_for('static', filename='img/eq77.png')}}" alt="shock absorbers" width="400px"></p>  
-<strong><u><p>3.Over Damping</p></u></strong>
-<p>When a heavily damped oscillator is displaced from the equilibrium,it will take a long time to return to its equilibrium position without oscillating.When damping is that large, the system does not oscillate at all.<br>
-<strong>Example:</strong> car suspension systems prevent the car from oscillating after travelling over a bump in the road<br>
-<u><p>Over damped oscillations:</u> b > 2.8 </p>
-<p><img src="images/eq66.png" alt="shock absorbers" width="400px"></p>  
-</ul>
-<h2><u>Forced Oscillators</u> </h2>
-<ul type="None">
-<li><p>Forced oscillations occur when an oscillating system is driven by a periodic force that is external to the oscillating system.</p></li>
-<li><p><strong><u>Example:-</u></strong>Applying force for movement of a pendulum turning of a radio </p><br>
-</li>
-<p>The equation is:<br></p>
-<li><p><img src="images/eq12.png" alt="shock absorbers" width="400px"></p></li>
-<li><p>here <br>ω: driven frequency for forced oscillations.<br> F<sub>o</sub>:force for the forced oscillator</p></li>
-<li><u><strong><p>Resonance</p></strong></u> 
-<p>If the forcing frequency is close to the natural frequency of the system, and the system is lightly damped, huge vibration amplitudes may occur.This phenomenon is known as resonance. </p></li></li>
-<li> <p>1. musical instruments (acoustic resonance).<br> 
-2. Most clocks keep time by mechanical resonance in a balance wheel,   pendulum, or quartz crystal.<br>
-3. Tidal resonance of the Bay of Fundy.<br>   
-4. Orbital resonance as in some moons of the solar system's gas giants.  <br>  
-5. The resonance of the basilar membrane in the ear.    <br>
-6. Making a child's swing swing higher by pushing it at each swing.  <br>  
-7. A wineglass breaking when someone sings a loud note at exactly the right pitch.</p><br>
-</li>
-<center> <h3> <u><p>Additional Information:</p></u></h3></center>
-<li> <p>There are some other types of oscillations such as :-</p></li>
-<center>
-<h3> <u><strong><p> Coupled Oscillators</p></strong></u> </h3> </center>
-<p>Coupled Oscillations occur when two or more oscillating systems are connected in such a manner as to allow motion energy to be exchanged between them.Coupled oscillators occur in nature (e.g., the moon and earth orbiting each other) or can be found in man-made devices (such as with the pacemaker).
+
+**Parameters:**
+- *m*: mass (kg)
+- *b*: damping factor (Ns/m)
+- *k*: spring constant (N/m)
+- \(F_o\): Force (N)
+- \(\omega\): driven frequency (rad/sec)
+- *t*: time period
+- \(\phi\): phase angle
+
+---
+
+# Damped Oscillators
+
+A damped oscillation occurs when the moving particle gradually loses kinetic energy due to resistive forces (air resistance, friction).  
+The displacement slowly reduces with time until rest.
+
+---
+
+**Example:**  
+- A simple pendulum oscillating under natural conditions  
+- Shock absorbers in vehicles
+
+---
+
+## Shock Absorbers
+
+If damping force \(F_o\) is proportional to velocity \(v_o\) with damping constant *b*:
+
+\[
+F_o = -b v_o
+\]
+
+Equation of motion becomes:  
+<p align="center">
+<img src="images/fourth.png" width="400px" alt="shock absorbers">
+</p>
+
+<p>
+<img src="images/eq7.png" width="400px" alt="equation">
+</p>
+
+<p align="center">
+<img src="images/eq3.png" width="400px" alt="equation">
+</p>
+
+Natural frequency of damped system:  
+<p align="center">
+<img src="images/eq8.png" width="400px" alt="equation">
+</p>
+
+Where:  
+\(b^2 = 4km\)  
+\(b = 2\sqrt{2}\)
+
+---
+
+## Types of Damping
+
+### 1. Under Damping
+- Small damping; system vibrates with decreasing amplitude.
+- **Example:** Swinging pendulum slowing down.
+- Condition: \(b < 2\sqrt{2}\)
+
+<p align="center">
+<img src="images/eq99.png" width="400px" alt="underdamped">
+</p>
+
+Amplitude:  
+<p align="center">
+<img src="images/eq3.png" width="400px" alt="amplitude">
+</p>
+
+---
+
+### 2. Critical Damping
+- System returns to equilibrium in the shortest time without oscillating.
+- **Example:** Car suspension system after a bump.
+- Condition: \(b = 2.8\)
+
+<p align="center">
+<img src="images/eq77.png" width="400px" alt="critical damping">
+</p>
+
+---
+
+### 3. Over Damping
+- Large damping; slow return to equilibrium without oscillations.
+- **Example:** Car suspension with excessive damping.
+- Condition: \(b > 2.8\)
+
+<p align="center">
+<img src="images/eq66.png" width="400px" alt="overdamped">
+</p>
+
+---
+
+# Forced Oscillators
+
+Forced oscillations occur when an oscillating system is driven by an **external periodic force**.
+
+**Example:** Applying force to keep a pendulum swinging.
+
+---
+
+**Equation:**
+<p align="center">
+<img src="images/eq12.png" width="400px" alt="equation">
+</p>
+
+Where:  
+- \(\omega\): driven frequency  
+- \(F_o\): force for forced oscillation
+
+---
+
+## Resonance
+
+When forcing frequency is close to natural frequency and damping is small, **large amplitudes** occur — this is **resonance**.
+
+**Examples:**
+1. Musical instruments (acoustic resonance)
+2. Clocks (balance wheel, pendulum, quartz crystal)
+3. Tidal resonance (Bay of Fundy)
+4. Orbital resonance (moons of gas giants)
+5. Basilar membrane in the ear
+6. Swinging a child's swing at the right frequency
+7. Breaking a wineglass with a matching pitch
+
+---
+
+## <p align="center"> Additional Information</p>
+There are some other types of oscillations such as :
+## Coupled Oscillators
+Coupled oscillations occur when two or more oscillating systems are connected in such a manner as to allow motion energy to be exchanged between them. Coupled oscillators occur in nature (e.g., the moon and earth orbiting each other) or can be found in man-made devices (such as with the pacemaker).
+
+---
