@@ -2,37 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "In which of the following is the interference due to the division of wave front?",
+      "question": "Which of the following is true for a simple harmonic oscillator?",
       "answers": {
-        "a": "Young’s double slit experiment",
-        "b": "Demonstration colours of thin film",
-        "c": "Lloyd’s mirror experiment",
-        "d": "Fresnel’s biprism experiment"
+        "a": "The restoring force is directly proportional to displacement and opposite in direction",
+        "b": "The restoring force is proportional to velocity",
+        "c": "The motion is non-periodic",
+        "d": "The motion cannot be represented by a sine or cosine function"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Correct. In SHM, restoring force F = -kx, proportional to displacement and opposite in direction.",
+        "b": "Incorrect. This describes damping, not SHM.",
+        "c": "Incorrect. SHM is periodic.",
+        "d": "Incorrect. SHM is represented by sine or cosine equations."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": " If a torch is used in a place of mobnochromatic light in young's experiment , what will happen  ?",
+      "question": "In a damped oscillator, the amplitude of oscillation:",
       "answers": {
-        "a": "No fringes will appear",
-        "b": "Fringe will appear for a moment then it will disappear",
-        "c": "Only bright fringes will appear",
-        "d": "Fringes will occur as from monochromatic light"
+        "a": "Remains constant",
+        "b": "Gradually decreases with time",
+        "c": "Gradually increases with time",
+        "d": "First increases then decreases"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Incorrect. Constant amplitude occurs only in undamped SHM.",
+        "b": "Correct. Damping causes energy loss and amplitude reduction over time.",
+        "c": "Incorrect. Amplitude does not increase without external energy.",
+        "d": "Incorrect. This is not typical for a purely damped oscillator."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which statement about a forced oscillator is correct?",
+      "answers": {
+        "a": "It oscillates only at its natural frequency",
+        "b": "It oscillates at the frequency of the applied force",
+        "c": "It never reaches a steady-state amplitude",
+        "d": "It cannot resonate"
+      },
+      "explanations": {
+        "a": "Incorrect. Forced oscillators match the frequency of the applied force, not just the natural frequency.",
+        "b": "Correct. The oscillation frequency equals that of the external driving force.",
+        "c": "Incorrect. Steady state can occur after transient effects die out.",
+        "d": "Incorrect. Forced oscillators can resonate when the driving frequency matches the natural frequency."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What happens to the energy in a damped harmonic oscillator over time?",
+      "answers": {
+        "a": "It stays constant",
+        "b": "It increases continuously",
+        "c": "It decreases due to non-conservative forces",
+        "d": "It fluctuates randomly"
+      },
+      "explanations": {
+        "a": "Incorrect. Energy is lost in damping.",
+        "b": "Incorrect. Energy increases only if an external source adds power.",
+        "c": "Correct. Non-conservative forces like friction convert mechanical energy into heat or sound.",
+        "d": "Incorrect. The energy decrease is systematic, not random."
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "At resonance in a forced oscillator with light damping:",
+      "answers": {
+        "a": "Amplitude is maximum",
+        "b": "Amplitude is minimum",
+        "c": "Amplitude remains constant regardless of frequency",
+        "d": "Oscillation stops completely"
+      },
+      "explanations": {
+        "a": "Correct. Resonance causes the largest amplitude when driving frequency equals natural frequency.",
+        "b": "Incorrect. This occurs when the driving frequency is far from the natural frequency.",
+        "c": "Incorrect. Amplitude depends strongly on frequency.",
+        "d": "Incorrect. Oscillation continues unless damping is infinite."
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
