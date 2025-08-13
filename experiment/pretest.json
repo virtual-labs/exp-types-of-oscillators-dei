@@ -2,71 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. Fringe width in a particular YDSE measured to be 𝛽. What will be the Fringe width if the wavelength of the light is doubled , the separation between the slits is halved and separation betweeen the screen and slits is tripled ?",
+      "question": "Which of the following is an example of free oscillations?",
       "answers": {
-        "a": "10 Times",
-        "b": "11 Times",
-        "c": "Same",
-        "d": "12 Times"
+        "a": "Shock absorber in vehicles",
+        "b": "Horizontal spring mass system",
+        "c": "Over damped car suspension",
+        "d": "LC circuit with resistance"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Shock absorbers are an example of damped oscillations.",
+        "b": "Correct! A horizontal spring mass system is a free oscillator.",
+        "c": "Over damping is a type of damped oscillation, not free oscillation.",
+        "d": "An LC circuit with resistance is damped."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "2. Two coherent sources are 0.3mm apart . They are 1m away from the screen . The second dark fringe is at a distance of 0.3cm from the center. The distance of the fourth bright fringe from the centre is?",
+      "question": "In simple harmonic motion, the restoring force is proportional to:",
       "answers": {
-        "a": "0.6cm",
-        "b": "0.8cm",
-        "c": "1.2cm",
-        "d": "0.12cm"
+        "a": "Velocity",
+        "b": "Acceleration",
+        "c": "Displacement",
+        "d": "Square of displacement"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "In SHM, restoring force depends on displacement, not velocity.",
+        "b": "Acceleration is proportional to displacement, but force itself is proportional to displacement.",
+        "c": "Correct! F = -kx shows force is directly proportional to displacement.",
+        "d": "Square of displacement is not relevant here."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "3. In Young’s double slit experiment, the distance between the two slits is made half, then the fringe width will become ?",
+      "question": "Which condition corresponds to critical damping?",
       "answers": {
-        "a": "Half",
-        "b": "One Fourth",
-        "c": "Double",
-        "d": "Unchanged"
+        "a": "b < 2√k m",
+        "b": "b = 2√k m",
+        "c": "b > 2√k m",
+        "d": "b = 0"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "This is the underdamped condition.",
+        "b": "Correct! Critical damping occurs when b equals 2√k m.",
+        "c": "This corresponds to over damping.",
+        "d": "This means no damping at all."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "4. In the Young’s double slit experiment, for which colour the fringe width is least ?",
+      "question": "In a U-tube performing SHM, the time period is independent of:",
       "answers": {
-        "a": "Blue",
-        "b": "Green",
-        "c": "Red",
-        "d": "Yellow"
+        "a": "Height of liquid column",
+        "b": "Density of liquid",
+        "c": "Acceleration due to gravity",
+        "d": "Length of liquid column in both arms"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Time period depends on height of liquid column h.",
+        "b": "Correct! T = 2π√(h/g) shows it is independent of density.",
+        "c": "T depends on g, so it is not independent.",
+        "d": "Length in both arms matters through h."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is NOT a type of damping?",
+      "answers": {
+        "a": "Under damping",
+        "b": "Over damping",
+        "c": "Critical damping",
+        "d": "Elastic damping"
+      },
+      "explanations": {
+        "a": "Under damping is a valid damping type.",
+        "b": "Over damping is a valid damping type.",
+        "c": "Critical damping is a valid damping type.",
+        "d": "Correct! Elastic damping is not discussed in this context."
+      },
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
