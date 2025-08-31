@@ -19,7 +19,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": " If a torch is used in a place of mobnochromatic light in young's experiment , what will happen  ?",
+      "question": "If a torch is used in place of monochromatic light in Young's experiment, what will happen?",
       "answers": {
         "a": "No fringes will appear",
         "b": "Fringe will appear for a moment then it will disappear",
@@ -33,6 +33,57 @@
         "d": ""
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is used to demonstrate interference by division of amplitude?",
+      "answers": {
+        "a": "Young’s double slit experiment",
+        "b": "Newton’s rings experiment",
+        "c": "Lloyd’s mirror experiment",
+        "d": "Fresnel’s biprism experiment"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the condition for constructive interference in Young’s double slit experiment?",
+      "answers": {
+        "a": "Path difference = (n + 1/2)λ",
+        "b": "Path difference = nλ",
+        "c": "Path difference = λ/4",
+        "d": "Path difference = 2λ + 1"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In Young’s double slit experiment, the central fringe is always:",
+      "answers": {
+        "a": "Bright",
+        "b": "Dark",
+        "c": "Alternating",
+        "d": "Depends on slit separation"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
