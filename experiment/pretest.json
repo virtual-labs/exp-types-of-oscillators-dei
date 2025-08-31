@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. Fringe width in a particular YDSE measured to be 𝛽. What will be the Fringe width if the wavelength of the light is doubled , the separation between the slits is halved and separation betweeen the screen and slits is tripled ?",
+      "question": "1. Fringe width in a particular YDSE measured to be 𝛽. What will be the Fringe width if the wavelength of the light is doubled, the separation between the slits is halved and separation between the screen and slits is tripled?",
       "answers": {
         "a": "10 Times",
         "b": "11 Times",
@@ -19,7 +19,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "2. Two coherent sources are 0.3mm apart . They are 1m away from the screen . The second dark fringe is at a distance of 0.3cm from the center. The distance of the fourth bright fringe from the centre is?",
+      "question": "2. Two coherent sources are 0.3mm apart. They are 1m away from the screen. The second dark fringe is at a distance of 0.3cm from the center. The distance of the fourth bright fringe from the centre is?",
       "answers": {
         "a": "0.6cm",
         "b": "0.8cm",
@@ -36,7 +36,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "3. In Young’s double slit experiment, the distance between the two slits is made half, then the fringe width will become ?",
+      "question": "3. In Young’s double slit experiment, the distance between the two slits is made half, then the fringe width will become?",
       "answers": {
         "a": "Half",
         "b": "One Fourth",
@@ -53,7 +53,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "4. In the Young’s double slit experiment, for which colour the fringe width is least ?",
+      "question": "4. In the Young’s double slit experiment, for which colour the fringe width is least?",
       "answers": {
         "a": "Blue",
         "b": "Green",
@@ -67,6 +67,23 @@
         "d": ""
       },
       "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. In YDSE, if the distance between screen and slits is doubled while keeping everything else constant, how will the fringe width change?",
+      "answers": {
+        "a": "It will become half",
+        "b": "It will double",
+        "c": "It will remain the same",
+        "d": "It will quadruple"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
