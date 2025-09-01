@@ -2,88 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. Fringe width in a particular YDSE measured to be 𝛽. What will be the Fringe width if the wavelength of the light is doubled, the separation between the slits is halved and separation between the screen and slits is tripled?",
+      "question": "1. Which of the following is a characteristic of free oscillations?",
       "answers": {
-        "a": "10 Times",
-        "b": "11 Times",
-        "c": "Same",
-        "d": "12 Times"
+        "a": "They always require an external periodic force",
+        "b": "They occur due to internal restoring forces like gravity or elasticity",
+        "c": "Their amplitude always increases with time",
+        "d": "They cannot occur in simple pendulums"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Incorrect. That describes forced oscillations.",
+        "b": "Correct. Free oscillations are maintained only by internal restoring forces.",
+        "c": "Incorrect. Amplitude remains constant in ideal free oscillations.",
+        "d": "Incorrect. Simple pendulums are classic examples of free oscillations."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. In simple harmonic motion (SHM), the restoring force is:",
+      "answers": {
+        "a": "Directly proportional to displacement and opposite in direction",
+        "b": "Proportional to velocity",
+        "c": "Constant regardless of displacement",
+        "d": "Independent of displacement"
+      },
+      "explanations": {
+        "a": "Correct. F = -kx is the fundamental law of SHM.",
+        "b": "Incorrect. That describes damping.",
+        "c": "Incorrect. Restoring force changes with displacement.",
+        "d": "Incorrect. SHM depends directly on displacement."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "2. Two coherent sources are 0.3mm apart. They are 1m away from the screen. The second dark fringe is at a distance of 0.3cm from the center. The distance of the fourth bright fringe from the centre is?",
+      "question": "3. What happens to the amplitude of a damped oscillator over time?",
       "answers": {
-        "a": "0.6cm",
-        "b": "0.8cm",
-        "c": "1.2cm",
-        "d": "0.12cm"
+        "a": "It remains constant",
+        "b": "It gradually decreases",
+        "c": "It gradually increases",
+        "d": "It fluctuates randomly"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Incorrect. Constant amplitude occurs only in ideal free oscillations.",
+        "b": "Correct. Damping reduces amplitude due to resistive forces.",
+        "c": "Incorrect. Energy is lost, not gained.",
+        "d": "Incorrect. The decrease is systematic, not random."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which of the following is an example of a forced oscillator?",
+      "answers": {
+        "a": "A tuning fork vibrating in air",
+        "b": "A car suspension system",
+        "c": "A pendulum pushed periodically by hand",
+        "d": "A simple pendulum oscillating freely"
+      },
+      "explanations": {
+        "a": "Incorrect. That’s an example of free oscillations.",
+        "b": "Partially correct. Suspensions involve damping mainly.",
+        "c": "Correct. The pendulum matches the frequency of the applied periodic force.",
+        "d": "Incorrect. That is a free oscillator."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "3. In Young’s double slit experiment, the distance between the two slits is made half, then the fringe width will become?",
+      "question": "5. At resonance in a lightly damped forced oscillator:",
       "answers": {
-        "a": "Half",
-        "b": "One Fourth",
-        "c": "Double",
-        "d": "Unchanged"
+        "a": "Amplitude becomes maximum",
+        "b": "Amplitude becomes zero",
+        "c": "Amplitude remains constant at all frequencies",
+        "d": "Oscillations stop completely"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Correct. Resonance occurs when driving frequency equals natural frequency, giving maximum amplitude.",
+        "b": "Incorrect. Amplitude does not vanish.",
+        "c": "Incorrect. Amplitude depends on driving frequency.",
+        "d": "Incorrect. Oscillations only stop with infinite damping."
       },
       "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "4. In the Young’s double slit experiment, for which colour the fringe width is least?",
-      "answers": {
-        "a": "Blue",
-        "b": "Green",
-        "c": "Red",
-        "d": "Yellow"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "5. In YDSE, if the distance between screen and slits is doubled while keeping everything else constant, how will the fringe width change?",
-      "answers": {
-        "a": "It will become half",
-        "b": "It will double",
-        "c": "It will remain the same",
-        "d": "It will quadruple"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
