@@ -912,19 +912,22 @@ function T06_SHO2_View_0 (_topFrame) {
       ;
 
     _view._addElement(EJSS_DRAWING2D.spring,"spring", _view.drawingPanel) // EJsS HtmlView.HtmlView Page: declaration of element 'spring'
-      .setProperty("Radius",0.5) // EJsS HtmlView.HtmlView Page: setting property 'Radius' for element 'spring'
+      .setProperty("Radius",0.7) // EJsS HtmlView.HtmlView Page: setting property 'Radius' for element 'spring'
       .setProperty("X",-11.0) // EJsS HtmlView.HtmlView Page: setting property 'X' for element 'spring'
       .setProperty("Y",0.0) // EJsS HtmlView.HtmlView Page: setting property 'Y' for element 'spring'
       .setProperty("SizeY",0.0) // EJsS HtmlView.HtmlView Page: setting property 'SizeY' for element 'spring'
       .setProperty("Loops",25) // EJsS HtmlView.HtmlView Page: setting property 'Loops' for element 'spring'
+      .setProperty("LineColor","#00bcd4") // EJsS HtmlView.HtmlView Page: setting property 'LineColor' for element 'spring'
+      .setProperty("LineWidth",2) // EJsS HtmlView.HtmlView Page: setting property 'LineWidth' for element 'spring'
       ;
 
     _view._addElement(EJSS_DRAWING2D.shape,"springBob", _view.drawingPanel) // EJsS HtmlView.HtmlView Page: declaration of element 'springBob'
-      .setProperty("FillColor","Purple") // EJsS HtmlView.HtmlView Page: setting property 'FillColor' for element 'springBob'
-      .setProperty("SizeX",1.5) // EJsS HtmlView.HtmlView Page: setting property 'SizeX' for element 'springBob'
+      .setProperty("FillColor","url(#massGradient)") // EJsS HtmlView.HtmlView Page: setting property 'FillColor' for element 'springBob'
+      .setProperty("SizeX",2.0) // EJsS HtmlView.HtmlView Page: setting property 'SizeX' for element 'springBob'
       .setProperty("Y",0.0) // EJsS HtmlView.HtmlView Page: setting property 'Y' for element 'springBob'
       .setProperty("Visibility",true) // EJsS HtmlView.HtmlView Page: setting property 'Visibility' for element 'springBob'
-      .setProperty("SizeY",1.5) // EJsS HtmlView.HtmlView Page: setting property 'SizeY' for element 'springBob'
+      .setProperty("SizeY",2.0) // EJsS HtmlView.HtmlView Page: setting property 'SizeY' for element 'springBob'
+      .setProperty("ShapeType","ROUNDED_RECTANGLE") // EJsS HtmlView.HtmlView Page: setting property 'ShapeType' for element 'springBob'
       ;
 
     _view._addElement(EJSS_DRAWING2D.arrow,"vArrow", _view.drawingPanel) // EJsS HtmlView.HtmlView Page: declaration of element 'vArrow'
