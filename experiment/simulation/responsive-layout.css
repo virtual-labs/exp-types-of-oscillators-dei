@@ -226,6 +226,13 @@ body {
   height: 100% !important;
   max-width: 100%;
   background: linear-gradient(to bottom, #e0f7fa 0%, #ffffff 100%);
+  overflow: auto;
+  pointer-events: auto;
+}
+
+#myPanel, #myGutters {
+  pointer-events: auto;
+  overflow: auto;
 }
 
 /* Make SVG responsive */
@@ -260,36 +267,45 @@ body {
 #buttonPanel {
   display: flex;
   flex-wrap: wrap;
+  /* width: 50; */
   justify-content: center;
   gap: var(--spacing-sm);
   padding: var(--spacing-md);
   background: #f8f9fa;
+  /* background: #6e99c4; */
   border-radius: var(--border-radius);
 }
 
 #buttonPanel button {
-  padding: var(--spacing-sm) var(--spacing-md);
-  border: 2px solid #ddd;
-  border-radius: var(--border-radius);
-  background: var(--white);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border: none;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.15);
   cursor: pointer;
   transition: var(--transition);
-  display: flex;
+  /* display: flex; */
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   min-width: 44px;
   min-height: 44px;
+  margin: 0.25rem;
 }
 
 #buttonPanel button:hover {
-  border-color: var(--primary-color);
-  background: rgba(33, 150, 243, 0.1);
-  transform: translateY(-1px);
+  background: linear-gradient(90deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+  box-shadow: 0 4px 12px rgba(33,150,243,0.25);
+  transform: translateY(-2px) scale(1.05);
 }
 
 #buttonPanel button img {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
 }
 
 #buttonPanel fieldset {
@@ -380,12 +396,27 @@ body {
 }
 
 .slider-controls input[type="number"] {
-  width: 60px;
+  width: 80px;
   padding: var(--spacing-xs) var(--spacing-sm);
-  border: 1px solid #ddd;
-  border-radius: var(--border-radius);
+  border: 2px solid var(--primary-color);
+  border-radius: 16px;
   font-family: inherit;
   text-align: center;
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: var(--transition);
+  box-shadow: 0 1px 4px rgba(33,150,243,0.08);
+}
+
+.slider-controls input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+select:focus {
+  border-color: var(--secondary-color);
+  background: #e3f2fd;
+  outline: none;
 }
 
 /* =================================================
@@ -622,14 +653,18 @@ footer {
   }
   
   #buttonPanel {
+    flex-direction: column;
     gap: var(--spacing-xs);
     padding: var(--spacing-sm);
+    align-items: stretch;
   }
   
   #buttonPanel button {
-    min-width: 40px;
+    min-width: 100%;
     min-height: 40px;
     padding: var(--spacing-xs);
+    font-size: 1rem;
+    border-radius: 16px;
   }
   
   .slider-controls {

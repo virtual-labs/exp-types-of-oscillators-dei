@@ -40,12 +40,13 @@
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <meta name="description" content="Interactive Simple Harmonic Motion Simulator - Explore physics concepts with real-time visualization">
+  <meta name="description"
+    content="Interactive Simple Harmonic Motion Simulator - Explore physics concepts with real-time visualization">
   <meta name="theme-color" content="#2196F3">
-  
+
   <!-- Responsive CSS -->
   <link rel="stylesheet" type="text/css" href="responsive-layout.css">
-  
+
   <script type="text/javascript"></script>
   <!-- <link rel="stylesheet" type="text/css" href="./Driven Damped Harmonic Motion_files/ejss(1).css">
   <script type="text/javascript" src="./Driven Damped Harmonic Motion_files/EJSS.js.download"></script> -->
@@ -114,7 +115,7 @@
             <defs>
 
             </defs>
-            <path id=".myPanel" d="M 0.5 0.5 L 0.5 479.5 L 974.5 479.5 L 974.5 0.5 z" fill="white" stroke="black"
+            <path id="myPanel" d="M 0.5 0.5 L 0.5 479.5 L 974.5 479.5 L 974.5 0.5 z" fill="white" stroke="black"
               stroke-width="0.5" shapeRendering="crispEdges" style="cursor: default;"></path>
             <g id="plottingPanel.bottomgroup" visibility="visible" transform="">
               <g id="plottingPanel.grid" visibility="visible" transform="">
@@ -152,7 +153,7 @@
               stroke-width="0.5" shapeRendering="auto" visibility="hidden" transform="">
             </ellipse>
 
-            <path id=".myGutters" stroke="none" stroke-width="0"
+            <path id="myGutters" stroke="none" stroke-width="0"
               d="M 0.5 0.5 L 0.5 319.5 L 649.5 319.5 L 649.5 0.5 L 0.5 0.5 M 50.5 50.5 L 599.5 50.5 L 599.5 269.5 L 50.5 269.5 L 50.5 50.5 z"
               fill="rgb(211,216,255)" shapeRendering="crispEdges" style="cursor: default;">
             </path>
@@ -343,7 +344,7 @@
                   style="  marker-start :none;   marker-end :none; "></path>
               </marker>
             </defs>
-            <path id=".myPanel" d="M 0.5 0.5 L 0.5 119.5 L 974.5 119.5 L 974.5 0.5 z" fill="rgb(239,239,255)"
+            <path id="myPanel" d="M 0.5 0.5 L 0.5 119.5 L 974.5 119.5 L 974.5 0.5 z" fill="rgb(239,239,255)"
               stroke="black" stroke-width="0.5" shapeRendering="auto" style="cursor: default;"></path>
             <g id="cursor" fill="none" stroke="White" shapeRendering="auto" visibility="visible" transform="">
               <path id="cursor.line1" stroke-width="0"></path>
@@ -452,13 +453,14 @@
             <button id="displacementLabel" title="Initial displacement"
               style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;"><i>x<sub>0</sub></i>:</button><input
               type="number" id="displacementField" title="Initial displacement"
-              style="width: 35px; background-color: white;"><button id="displacementLabel2" title="Initial displacement"
-              style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">m</button>
+              style="width: 35px; background-color: white;">
+              <button id="displacementLabel2" title="Initial displacement" style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">m</button>
           </div>
         </div>
         <div id="parameterPanel" style="padding: 0px; margin: 0px auto; text-align: center; display: none;">
           <div id="parameterPanelTop" style="padding: 0px; margin: 0px auto; text-align: center; display: block;">
-            <div id="bSliderPanel" class="slider-panel" style="padding: 0px; margin: 0px auto; text-align: center; display: inline-block;">
+            <div id="bSliderPanel" class="slider-panel"
+              style="padding: 0px; margin: 0px auto; text-align: center; display: inline-block;">
               <button id="bLabel"
                 style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;"><i>b</i>:</button>
               <div class="slider-controls">
@@ -469,12 +471,13 @@
                       step="0.01" min="0" style="vertical-align: middle; width: 98%; height: 98%;"></div>
                 </div>
                 <input type="number" id="bField" title="damping coefficient"
-                  style="width: 40px; background-color: white;">
+                  style="width: 40px; background-color: white; border: 2px;">
                 <button id="bLabel2"
                   style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">Ns/m</button>
               </div>
             </div>
-            <div id="v0SliderPanel" class="slider-panel" style="padding: 0px; margin: 0px auto; text-align: center; display: inline-block;">
+            <div id="v0SliderPanel" class="slider-panel"
+              style="padding: 0px; margin: 0px auto; text-align: center; display: inline-block;">
               <button id="v0Label"
                 style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;"><i>v<sub>0</sub></i>:</button>
               <div class="slider-controls">
@@ -548,25 +551,7 @@
     (function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
   </script>
 
-<!-- 
-  <div style="position:absolute; right:50px; top:235px; background-color:beige; width:260px; height:500px;">
-
-    <h3 style="text-align:center;"> Equation of motion:</h3>
-    <p><img src="eq55.png" alt="shock absorbers" width=250px></p>
-    <h3 style="text-align:center;">Parameters used in equation</h3>
-    <ul>
-      <li>m: mass of the ball in kg</li>
-      <li>b: damping factor in Ns/m</li>
-      <li>k: spring constant in N/m</li>
-      <li> v<sub>o</sub>: initial velocity in m/sec</li>
-      <li> ω: driven frequency in rad/sec</li>
-      <li>F<sub>o</sub>:Force in N</li>
-      <li>x<sub>o</sub>:initial displacement in m</li>
-      <li>t: time period in `sec`</li>
-      <li>V: mass velocity</li>
-    </ul>
-  </div> -->
-
+ 
   <!-- Experiment Info Section -->
   <div class="experiment-info">
     <h2>Simple Harmonic Motion - Experiment Information</h2>
@@ -576,9 +561,9 @@
     <p><strong>Examples:</strong> Common examples of SHM include pendulum swings and mass-spring systems.</p>
 
     <h3 style="text-align:left;"> Equation of motion:</h3>
-    <p><img src="eq55.png" alt="shock absorbers" width=250px></p>
+    <p><img src="eq55.png" alt="shock absorbers" width=250px style="margin-top: 20px;"></p>
     <h3 style="text-align:left;">Parameters used in equation</h3>
-    <ul>
+    <ul style="list-style: none;">
       <li>m: mass of the ball in kg</li>
       <li>b: damping factor in Ns/m</li>
       <li>k: spring constant in N/m</li>
@@ -591,7 +576,7 @@
     </ul>
 
     <p><strong>Experiment Features:</strong></p>
-    <ul>
+    <ul style="list-style: none;">
       <li>Interactive simulation of SHM</li>
       <li>Adjustable amplitude, frequency, and phase</li>
       <li>Real-time graph plotting</li>
@@ -599,7 +584,7 @@
     </ul>
   </div>
 
-  <footer>
+  <footer >
     <div class="foot1">
       <div class="fheading">
         <h4>Community Links</h4>
@@ -656,16 +641,8 @@
         </a>
       </div>
     </div>
-    <div class="endfoot">
-      <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPL 3.0</a> & <a
-        href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons (CC BY-NC-SA 4.0)</a>
-    </div>
-  </footer>
 
-  <!-- Custom Footer -->
-  <div class="custom-footer">
-    Developed as a Physics Educational Project – SHM Simulator
-  </div>
+  </footer>
 
   <!-- Responsive Enhancement Script -->
   <script src="responsive-enhancements.js"></script>
