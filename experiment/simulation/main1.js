@@ -1112,11 +1112,6 @@ function T06_SHO2_View_0 (_topFrame) {
       .setProperty("Text","N") // EJsS HtmlView.HtmlView Page: setting property 'Text' for element 'F0Label2'
       ;
 
-    // _view._addElement(EJSS_INTERFACE.panel,"questionPanel", _view._topFrame) // EJsS HtmlView.HtmlView Page: declaration of element 'questionPanel'
-    // .setProperty(
-    //   'Html','<br><br><br>Use the above Spring-Mass Simulator to conduct your experiments<br><br><br>') 
-    // // EJsS HtmlView.HtmlView Page: setting property 'Html' for element 'questionPanel'
-    //   ;
 
   };
 
