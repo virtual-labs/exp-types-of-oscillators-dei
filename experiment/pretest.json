@@ -2,88 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Which of the following is an example of free oscillations?",
+      "question": "1. Which of the following is a characteristic of free oscillations?",
       "answers": {
-        "a": "Shock absorber in vehicles",
-        "b": "Horizontal spring mass system",
-        "c": "Over damped car suspension",
-        "d": "LC circuit with resistance"
+        "a": "They always require an external periodic force",
+        "b": "They occur due to internal restoring forces like gravity or elasticity",
+        "c": "Their amplitude always increases with time",
+        "d": "They cannot occur in simple pendulums"
       },
       "explanations": {
-        "a": "Shock absorbers are an example of damped oscillations.",
-        "b": "Correct! A horizontal spring mass system is a free oscillator.",
-        "c": "Over damping is a type of damped oscillation, not free oscillation.",
-        "d": "An LC circuit with resistance is damped."
+        "a": "Incorrect. That describes forced oscillations.",
+        "b": "Correct. Free oscillations are maintained only by internal restoring forces.",
+        "c": "Incorrect. Amplitude remains constant in ideal free oscillations.",
+        "d": "Incorrect. Simple pendulums are classic examples of free oscillations."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "In simple harmonic motion, the restoring force is proportional to:",
+      "question": "2. In simple harmonic motion (SHM), the restoring force is:",
       "answers": {
-        "a": "Velocity",
-        "b": "Acceleration",
-        "c": "Displacement",
-        "d": "Square of displacement"
+        "a": "Directly proportional to displacement and opposite in direction",
+        "b": "Proportional to velocity",
+        "c": "Constant regardless of displacement",
+        "d": "Independent of displacement"
       },
       "explanations": {
-        "a": "In SHM, restoring force depends on displacement, not velocity.",
-        "b": "Acceleration is proportional to displacement, but force itself is proportional to displacement.",
-        "c": "Correct! F = -kx shows force is directly proportional to displacement.",
-        "d": "Square of displacement is not relevant here."
+        "a": "Correct. F = -kx is the fundamental law of SHM.",
+        "b": "Incorrect. That describes damping.",
+        "c": "Incorrect. Restoring force changes with displacement.",
+        "d": "Incorrect. SHM depends directly on displacement."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. What happens to the amplitude of a damped oscillator over time?",
+      "answers": {
+        "a": "It remains constant",
+        "b": "It gradually decreases",
+        "c": "It gradually increases",
+        "d": "It fluctuates randomly"
+      },
+      "explanations": {
+        "a": "Incorrect. Constant amplitude occurs only in ideal free oscillations.",
+        "b": "Correct. Damping reduces amplitude due to resistive forces.",
+        "c": "Incorrect. Energy is lost, not gained.",
+        "d": "Incorrect. The decrease is systematic, not random."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which of the following is an example of a forced oscillator?",
+      "answers": {
+        "a": "A tuning fork vibrating in air",
+        "b": "A car suspension system",
+        "c": "A pendulum pushed periodically by hand",
+        "d": "A simple pendulum oscillating freely"
+      },
+      "explanations": {
+        "a": "Incorrect. That’s an example of free oscillations.",
+        "b": "Partially correct. Suspensions involve damping mainly.",
+        "c": "Correct. The pendulum matches the frequency of the applied periodic force.",
+        "d": "Incorrect. That is a free oscillator."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "Which condition corresponds to critical damping?",
+      "question": "5. At resonance in a lightly damped forced oscillator:",
       "answers": {
-        "a": "b < 2√k m",
-        "b": "b = 2√k m",
-        "c": "b > 2√k m",
-        "d": "b = 0"
+        "a": "Amplitude becomes maximum",
+        "b": "Amplitude becomes zero",
+        "c": "Amplitude remains constant at all frequencies",
+        "d": "Oscillations stop completely"
       },
       "explanations": {
-        "a": "This is the underdamped condition.",
-        "b": "Correct! Critical damping occurs when b equals 2√k m.",
-        "c": "This corresponds to over damping.",
-        "d": "This means no damping at all."
+        "a": "Correct. Resonance occurs when driving frequency equals natural frequency, giving maximum amplitude.",
+        "b": "Incorrect. Amplitude does not vanish.",
+        "c": "Incorrect. Amplitude depends on driving frequency.",
+        "d": "Incorrect. Oscillations only stop with infinite damping."
       },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "In a U-tube performing SHM, the time period is independent of:",
-      "answers": {
-        "a": "Height of liquid column",
-        "b": "Density of liquid",
-        "c": "Acceleration due to gravity",
-        "d": "Length of liquid column in both arms"
-      },
-      "explanations": {
-        "a": "Time period depends on height of liquid column h.",
-        "b": "Correct! T = 2π√(h/g) shows it is independent of density.",
-        "c": "T depends on g, so it is not independent.",
-        "d": "Length in both arms matters through h."
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "Which of the following is NOT a type of damping?",
-      "answers": {
-        "a": "Under damping",
-        "b": "Over damping",
-        "c": "Critical damping",
-        "d": "Elastic damping"
-      },
-      "explanations": {
-        "a": "Under damping is a valid damping type.",
-        "b": "Over damping is a valid damping type.",
-        "c": "Critical damping is a valid damping type.",
-        "d": "Correct! Elastic damping is not discussed in this context."
-      },
-      "correctAnswer": "d",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

@@ -1,1 +1,1 @@
-## Types of oscillators: simple harmonic, damped and forced.
+## Types of Oscillators: Simple Harmonic, Damped and Forced.

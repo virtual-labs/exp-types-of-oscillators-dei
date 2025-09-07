@@ -2,88 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Which of the following is true for a simple harmonic oscillator?",
+      "question": "1. Which of the following oscillations is considered a free oscillation?",
       "answers": {
-        "a": "The restoring force is directly proportional to displacement and opposite in direction",
-        "b": "The restoring force is proportional to velocity",
-        "c": "The motion is non-periodic",
-        "d": "The motion cannot be represented by a sine or cosine function"
+        "a": "Simple Harmonic Motion (SHM)",
+        "b": "Damped Oscillation",
+        "c": "Forced Oscillation",
+        "d": "Critical Damping"
       },
       "explanations": {
-        "a": "Correct. In SHM, restoring force F = -kx, proportional to displacement and opposite in direction.",
-        "b": "Incorrect. This describes damping, not SHM.",
-        "c": "Incorrect. SHM is periodic.",
-        "d": "Incorrect. SHM is represented by sine or cosine equations."
+        "a": "Correct. SHM is the natural oscillation without external force or damping.",
+        "b": "Not correct. Damped oscillation loses energy over time.",
+        "c": "Not correct. Forced oscillation requires external driving force.",
+        "d": "Not correct. Critical damping prevents oscillation."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "In a damped oscillator, the amplitude of oscillation:",
+      "question": "2. In damped oscillations, energy of the system:",
       "answers": {
         "a": "Remains constant",
         "b": "Gradually decreases with time",
-        "c": "Gradually increases with time",
-        "d": "First increases then decreases"
+        "c": "Increases continuously",
+        "d": "Becomes infinite"
       },
       "explanations": {
-        "a": "Incorrect. Constant amplitude occurs only in undamped SHM.",
-        "b": "Correct. Damping causes energy loss and amplitude reduction over time.",
-        "c": "Incorrect. Amplitude does not increase without external energy.",
-        "d": "Incorrect. This is not typical for a purely damped oscillator."
+        "a": "Not correct. Energy cannot remain constant due to damping.",
+        "b": "Correct. Energy is lost due to friction or resistance.",
+        "c": "Not correct. No system can gain energy continuously without external source.",
+        "d": "Not correct. Infinite energy is not possible."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "Which statement about a forced oscillator is correct?",
+      "question": "3. Which type of damping allows the system to return to equilibrium in the shortest possible time without oscillating?",
       "answers": {
-        "a": "It oscillates only at its natural frequency",
-        "b": "It oscillates at the frequency of the applied force",
-        "c": "It never reaches a steady-state amplitude",
-        "d": "It cannot resonate"
+        "a": "Under damping",
+        "b": "Over damping",
+        "c": "Critical damping",
+        "d": "Free oscillation"
       },
       "explanations": {
-        "a": "Incorrect. Forced oscillators match the frequency of the applied force, not just the natural frequency.",
-        "b": "Correct. The oscillation frequency equals that of the external driving force.",
-        "c": "Incorrect. Steady state can occur after transient effects die out.",
-        "d": "Incorrect. Forced oscillators can resonate when the driving frequency matches the natural frequency."
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "What happens to the energy in a damped harmonic oscillator over time?",
-      "answers": {
-        "a": "It stays constant",
-        "b": "It increases continuously",
-        "c": "It decreases due to non-conservative forces",
-        "d": "It fluctuates randomly"
-      },
-      "explanations": {
-        "a": "Incorrect. Energy is lost in damping.",
-        "b": "Incorrect. Energy increases only if an external source adds power.",
-        "c": "Correct. Non-conservative forces like friction convert mechanical energy into heat or sound.",
-        "d": "Incorrect. The energy decrease is systematic, not random."
+        "a": "Not correct. Under damping produces oscillations.",
+        "b": "Not correct. Over damping takes longer to reach equilibrium.",
+        "c": "Correct. Critical damping achieves fastest return without oscillations.",
+        "d": "Not correct. Free oscillation has no damping."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     },
     {
-      "question": "At resonance in a forced oscillator with light damping:",
+      "question": "4. In forced oscillation, when the frequency of the driving force matches the natural frequency of the system, the phenomenon is called:",
       "answers": {
-        "a": "Amplitude is maximum",
-        "b": "Amplitude is minimum",
-        "c": "Amplitude remains constant regardless of frequency",
-        "d": "Oscillation stops completely"
+        "a": "Attenuation",
+        "b": "Resonance",
+        "c": "Critical damping",
+        "d": "Superposition"
       },
       "explanations": {
-        "a": "Correct. Resonance causes the largest amplitude when driving frequency equals natural frequency.",
-        "b": "Incorrect. This occurs when the driving frequency is far from the natural frequency.",
-        "c": "Incorrect. Amplitude depends strongly on frequency.",
-        "d": "Incorrect. Oscillation continues unless damping is infinite."
+        "a": "Not correct. Attenuation refers to reduction of amplitude.",
+        "b": "Correct. Resonance occurs when driving and natural frequencies match.",
+        "c": "Not correct. Critical damping is related to stopping oscillations.",
+        "d": "Not correct. Superposition refers to addition of waves."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Which graph best represents displacement versus time for a free simple harmonic oscillator?",
+      "answers": {
+        "a": "Straight line with positive slope",
+        "b": "Exponential decay curve",
+        "c": "Sine or cosine wave",
+        "d": "Parabolic curve"
+      },
+      "explanations": {
+        "a": "Not correct. Straight line indicates uniform motion, not oscillation.",
+        "b": "Not correct. Exponential decay represents damping.",
+        "c": "Correct. SHM is represented by sine or cosine wave.",
+        "d": "Not correct. Parabolic is for uniformly accelerated motion."
+      },
+      "correctAnswer": "c",
       "difficulty": "beginner"
     }
   ]
