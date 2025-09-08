@@ -127,13 +127,14 @@ footer {
   left: 1.5%;
 }
 .fheading h4 {
-  margin-top: -20px;
-  /* background-color: #ff6600; */
+  margin-top: 0px;
+  
+  color: whitesmoke;
 }
 .fheading {
   height: 20px;
   width: 100%;
-  padding: -90px 0px;
+  padding: 10px 0px;
   color: whitesmoke;
   border-width: 0.15rem;
   border-style: solid;
