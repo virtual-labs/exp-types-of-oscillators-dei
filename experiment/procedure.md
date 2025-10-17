@@ -23,21 +23,21 @@
 <li><p>Case 1:<u>Under-Damping</u></p></li>
 <p>Set the value of b < 2√2 (say b= 0.5) </p>
 <u style="color:darkblue;"><p style="color:darkblue;">Graph representing under-damped oscillatory  motion (position graph)</p></u>
-<img src="images/ss1.png" alt="screenshot3" width="700px">
+<img src="images/graph3.png" alt="screenshot3" width="700px">
 <u style="color:darkblue;"><p style="color:darkblue;">Graph representing under-damped oscillatory motion (position and velocity graph)</p></u>
 <img src="images/graph4.png')}}" alt="screenshot4"width="700px">
 <li><p>Case 2: <u>Critical-Damping</u></p></li>
 <p>Set the value of b = 2√2  </p>
 <u style="color:darkblue;"><p style="color:darkblue;">Graph representing critical-damped oscillatory motion (position graph)</p></u>
-<img src="images/ss3.png" alt="screenshot5" width="700px">
+<img src="images/graph5.png" alt="screenshot5" width="700px">
 <u style="color:darkblue;"><p style="color:darkblue;">Graph representing critical-damped oscillatory motion (position and velocity graph)</p></u>
-<img src="images/ss2.png" alt="screenshot6" width="700px">
+<img src="images/graph6.png" alt="screenshot6" width="700px">
 <li><p>Case 3: <u>Over-Damping</u></p></li>
 <p>Set the value of b > 2√2 (say b= 3) </p>
 <u style="color:darkblue;"><p style="color:darkblue;">Graph representing over-damped oscillatory motion (position graph)</p></u>
-<img src="images/ss4.png" alt="screenshot7" width="700px">
+<img src="images/graph7.png" alt="screenshot7" width="700px">
 <u style="color:darkblue;"><p style="color:darkblue;">Graph representing over-damped oscillatory motion (position and velocity graph)</p></u>
-<img src="images/ss5.png" alt="screenshot8" width="700px"></ul>
+<img src="images/graph8.png" alt="screenshot8" width="700px"></ul>
 <li><p>step4: Drag the ball to maximum starting position say x<sub>o</sub>= 10.0m  and play the animation button.</p></li>
 <li><p>step5: In all the above three cases mentioned observe the graph and wait till animation ends.</p></li>
 </ul>
