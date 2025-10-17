@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which of the following oscillations is considered a free oscillation?",
+      "answers": {
+        "a": "Simple Harmonic Motion (SHM)",
+        "b": "Damped Oscillation",
+        "c": "Forced Oscillation",
+        "d": "Critical Damping"
+      },
+      "explanations": {
+        "a": "Correct. SHM is the natural oscillation without external force or damping.",
+        "b": "Not correct. Damped oscillation loses energy over time.",
+        "c": "Not correct. Forced oscillation requires external driving force.",
+        "d": "Not correct. Critical damping prevents oscillation."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. In damped oscillations, energy of the system:",
+      "answers": {
+        "a": "Remains constant",
+        "b": "Gradually decreases with time",
+        "c": "Increases continuously",
+        "d": "Becomes infinite"
+      },
+      "explanations": {
+        "a": "Not correct. Energy cannot remain constant due to damping.",
+        "b": "Correct. Energy is lost due to friction or resistance.",
+        "c": "Not correct. No system can gain energy continuously without external source.",
+        "d": "Not correct. Infinite energy is not possible."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Which type of damping allows the system to return to equilibrium in the shortest possible time without oscillating?",
+      "answers": {
+        "a": "Under damping",
+        "b": "Over damping",
+        "c": "Critical damping",
+        "d": "Free oscillation"
+      },
+      "explanations": {
+        "a": "Not correct. Under damping produces oscillations.",
+        "b": "Not correct. Over damping takes longer to reach equilibrium.",
+        "c": "Correct. Critical damping achieves fastest return without oscillations.",
+        "d": "Not correct. Free oscillation has no damping."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "4. In forced oscillation, when the frequency of the driving force matches the natural frequency of the system, the phenomenon is called:",
+      "answers": {
+        "a": "Attenuation",
+        "b": "Resonance",
+        "c": "Critical damping",
+        "d": "Superposition"
+      },
+      "explanations": {
+        "a": "Not correct. Attenuation refers to reduction of amplitude.",
+        "b": "Correct. Resonance occurs when driving and natural frequencies match.",
+        "c": "Not correct. Critical damping is related to stopping oscillations.",
+        "d": "Not correct. Superposition refers to addition of waves."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Which graph best represents displacement versus time for a free simple harmonic oscillator?",
+      "answers": {
+        "a": "Straight line with positive slope",
+        "b": "Exponential decay curve",
+        "c": "Sine or cosine wave",
+        "d": "Parabolic curve"
+      },
+      "explanations": {
+        "a": "Not correct. Straight line indicates uniform motion, not oscillation.",
+        "b": "Not correct. Exponential decay represents damping.",
+        "c": "Correct. SHM is represented by sine or cosine wave.",
+        "d": "Not correct. Parabolic is for uniformly accelerated motion."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}
