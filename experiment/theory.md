@@ -8,16 +8,16 @@ This motion is used to model many situations in real world where a mass oscillat
 <li>Simple Pendulum</li>
 <p> In a simple pendulum, a mass oscillates suspended by a light rigid rod or a metallic bob suspended by a string attached to a surface.</p>
 <!-- <img src="{{url_for('static', filename='img/simple.gif')}}" alt="pendulum" width="300px" height="200px"> -->
-<li>2.	Mass attached to a Spring</li>
+<li>Mass attached to a Spring</li>
 <p>A mass attached to a spring that is fixed to a wall.</p>
 <!-- <img src="{{url_for('static', filename='img/spring mass system.gif')}}" alt="spring mass" width="100px" height="200px"> -->
 <br>
 <!-- <img src="{{url_for('static', filename='img/mass spring system2.gif')}}" alt="spring mass" width="300px" height="200px" ><br> -->
-<li>3.	Oscillations of a liquid column in a U-Tube</li>
+<li>Oscillations of a liquid column in a U-Tube</li>
 <p>
 The motion of an oscillating liquid column in a U tube is SHM with period T = 2πgh, where h is the height of the liquid column in one arm of U tube in equilibrium position of the liquid.</p>
 <p>Therefore,T is independent of the density of liquid.</p>
-<li>4. LC Oscillatorr</li>
+<li>LC Oscillatorr</li>
 <p>In an electrical circuit, an inductance L connected across a capacitance C carrying a charge q.</p>
 </ol>
 <p>The general governing equation for simple harmonic motion is:</p> 
@@ -114,3 +114,4 @@ and amplitude is given by:-</p>
 <center>
 <h3> <u><strong><p> Coupled Oscillators</p></strong></u> </h3> </center>
 <p>Coupled oscillations occur when two or more oscillating systems are connected in such a manner as to allow energy to be exchanged between them. Coupled oscillators occur in nature (e.g., the moon and earth orbiting each other) or natural pacemakers in the heart..
+</p>
