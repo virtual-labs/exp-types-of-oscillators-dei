@@ -1,8 +1,1 @@
-To study the following oscillators:
-1. **Free Oscillators:**
-   - Simple Harmonic Motion (SHM)
-2. **Damped Oscillators:**
-   - Under Damping
-   - Critical Damping
-   - Over Damping
-3. **Forced Oscillators**
+﻿To study the types of oscillators: Simple Harmonic Oscillator (Free Oscillator), Damped Oscillator (Under-damped, Critically-damped and Over-damped), and Forced Oscillator; to understand their equations of motion, nature of oscillations, and behaviour under varying damping and driving conditions.

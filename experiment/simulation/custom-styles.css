@@ -190,6 +190,51 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ===== Stylish Number Inputs – hide spinners & modern look ===== */
+
+/* Remove up/down spinner arrows – all browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield;
+}
+
+/* Base style for every number field in the simulation */
+input[type="number"] {
+  background: linear-gradient(135deg, #e8f5e9 0%, #e0f7fa 100%) !important;
+  border: 2px solid #00897b !important;
+  border-radius: 10px !important;
+  padding: 5px 10px !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 0.92em !important;
+  font-weight: 600 !important;
+  color: #004d40 !important;
+  width: 68px !important;
+  text-align: center !important;
+  box-shadow: 0 2px 8px rgba(0, 137, 123, 0.18), inset 0 1px 3px rgba(255,255,255,0.6) !important;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease !important;
+  outline: none !important;
+  cursor: text !important;
+  letter-spacing: 0.5px !important;
+}
+
+input[type="number"]:hover {
+  border-color: #00695c !important;
+  box-shadow: 0 4px 12px rgba(0, 105, 92, 0.22), inset 0 1px 3px rgba(255,255,255,0.6) !important;
+  transform: translateY(-1px) !important;
+}
+
+input[type="number"]:focus {
+  border-color: #004d40 !important;
+  background: #ffffff !important;
+  box-shadow: 0 0 0 3px rgba(0, 137, 123, 0.28), 0 4px 12px rgba(0, 105, 92, 0.18) !important;
+  transform: translateY(-1px) scale(1.04) !important;
+}
+
 /* Improve buttons */
 button {
   font-family: 'Poppins', sans-serif !important;

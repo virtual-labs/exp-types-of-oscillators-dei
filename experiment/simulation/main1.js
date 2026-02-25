@@ -1,3 +1,43 @@
+/* Global variable for experiment case selection */
+let experimentCase = 'free';
+
+/* Function to set the current experiment case */
+function setExperimentCase(caseName) {
+  experimentCase = caseName;
+  console.log("Current Experiment Case:", experimentCase);
+  updateControlsVisibility();
+}
+
+/* Function to update control panel visibility based on experiment case */
+function updateControlsVisibility() {
+    const x0 = document.getElementById('control-x0');
+    const damping = document.getElementById('control-damping');
+    const force = document.getElementById('control-force');
+    const frequency = document.getElementById('control-frequency');
+
+    // Hide all controls initially
+    x0.style.display = 'none';
+    damping.style.display = 'none';
+    force.style.display = 'none';
+    frequency.style.display = 'none';
+
+    if (experimentCase === 'free') {
+        x0.style.display = 'block';
+    }
+
+    if (experimentCase === 'damped') {
+        x0.style.display = 'block';
+        damping.style.display = 'block';
+    }
+
+    if (experimentCase === 'forced') {
+        x0.style.display = 'block';
+        damping.style.display = 'block';
+        force.style.display = 'block';
+        frequency.style.display = 'block';
+    }
+}
+
 /* _inputParameters: an object with different values for the model parameters */
 function T06_SHO2(_topFrame,_libraryPath,_codebasePath, _inputParameters) {
   var _model = EJSS_CORE.createAnimationLMS();
