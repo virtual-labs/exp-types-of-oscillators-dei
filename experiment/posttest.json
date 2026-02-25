@@ -1,175 +1,90 @@
-﻿{
+{
   "version": 2.0,
   "questions": [
     {
-      "question": "1. To study simple harmonic motion in the simulation, the value of the damping factor b is set to:",
+      "question": "1. Which of the following oscillations is considered a free oscillation?",
       "answers": {
-        "a": "b > 2√2",
-        "b": "b = 2√2",
-        "c": "b = 0",
-        "d": "b = 0.5"
-      },
-      "explanations": {
-        "a": "Incorrect. b > 2√2 produces over-damped oscillations.",
-        "b": "Incorrect. b = 2√2 produces critically damped motion.",
-        "c": "Correct. Setting b = 0 removes all damping, giving pure simple harmonic motion.",
-        "d": "Incorrect. b = 0.5 gives under-damped oscillations, not pure SHM."
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "2. While studying damped oscillatory motion, under-damped oscillations occur when the damping factor b satisfies:",
-      "answers": {
-        "a": "b = 0",
-        "b": "b = 2√2",
-        "c": "b < 2√2",
-        "d": "b > 2√2"
-      },
-      "explanations": {
-        "a": "Incorrect. b = 0 means no damping — this is pure SHM.",
-        "b": "Incorrect. This condition gives critical damping.",
-        "c": "Correct. When b < 2√2, the system oscillates with exponentially decreasing amplitude (under-damped).",
-        "d": "Incorrect. This condition gives over-damped (non-oscillatory) motion."
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "3. In the experiment to calculate the spring constant k for a free oscillator, the angular frequency ω is obtained using:",
-      "answers": {
-        "a": "ω = 1/T",
-        "b": "ω = 2πf",
-        "c": "ω = √(k/m − b²/4m²)",
-        "d": "ω = b/2m"
-      },
-      "explanations": {
-        "a": "Incorrect. 1/T gives ordinary frequency f, not angular frequency.",
-        "b": "Correct. Angular frequency ω = 2πf, where f is the oscillation frequency read from the simulation.",
-        "c": "Incorrect. This formula applies to the damped oscillator, not the free oscillator case.",
-        "d": "Incorrect. b/2m is the decay constant γ."
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "4. Which of the following oscillations is classified as free oscillation?",
-      "answers": {
-        "a": "Simple Harmonic Motion (SHM) with b = 0 and F₀ = 0",
+        "a": "Simple Harmonic Motion (SHM)",
         "b": "Damped Oscillation",
         "c": "Forced Oscillation",
-        "d": "Critically Damped Oscillation"
+        "d": "Critical Damping"
       },
       "explanations": {
-        "a": "Correct. Free oscillation means no external driving force and no damping — pure SHM.",
-        "b": "Incorrect. Damped oscillation loses energy; it is not a free oscillation.",
-        "c": "Incorrect. Forced oscillation requires an external periodic force.",
-        "d": "Incorrect. Critical damping is a special case of damped motion."
+        "a": "Correct. SHM is the natural oscillation without external force or damping.",
+        "b": "Not correct. Damped oscillation loses energy over time.",
+        "c": "Not correct. Forced oscillation requires external driving force.",
+        "d": "Not correct. Critical damping prevents oscillation."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "5. In the forced oscillation experiment, the amplitude A of oscillation is calculated using which relation?",
+      "question": "2. In damped oscillations, energy of the system:",
       "answers": {
-        "a": "A = F₀ · ω",
-        "b": "A = F₀ / k",
-        "c": "A = F₀ / (m√[(ω² − ω₀²)² + 4γ²m²])",
-        "d": "A = m · ω²"
+        "a": "Remains constant",
+        "b": "Gradually decreases with time",
+        "c": "Increases continuously",
+        "d": "Becomes infinite"
       },
       "explanations": {
-        "a": "Incorrect. F₀·ω is not dimensionally consistent for amplitude.",
-        "b": "Incorrect. F₀/k gives static deflection, not the dynamic amplitude.",
-        "c": "Correct. This is the standard formula for steady-state amplitude of a driven damped oscillator.",
-        "d": "Incorrect. m·ω² has units of force divided by length, not amplitude."
-      },
-      "correctAnswer": "c",
-      "difficulty": "intermediate"
-    },
-    {
-      "question": "6. During the forced oscillation experiment, the driven angular frequency ω is set to 1.41 rad/sec. This is because:",
-      "answers": {
-        "a": "1.41 is a standard default value with no special significance",
-        "b": "It approximates √2, close to the natural frequency ω₀ = √(k/m) = √2 for k = 2, m = 1",
-        "c": "It is above the critical damping threshold",
-        "d": "It ensures the system is always over-damped"
-      },
-      "explanations": {
-        "a": "Incorrect. The value is deliberately chosen to be near resonance.",
-        "b": "Correct. √2 ≈ 1.414 rad/sec matches ω₀ = √(k/m) for k = 2 N/m and m = 1 kg, inducing near-resonance.",
-        "c": "Incorrect. The critical damping threshold concerns the damping factor b, not ω.",
-        "d": "Incorrect. Over-damping is controlled by b, not by the value of ω."
+        "a": "Not correct. Energy cannot remain constant due to damping.",
+        "b": "Correct. Energy is lost due to friction or resistance.",
+        "c": "Not correct. No system can gain energy continuously without external source.",
+        "d": "Not correct. Infinite energy is not possible."
       },
       "correctAnswer": "b",
-      "difficulty": "intermediate"
-    },
-    {
-      "question": "7. When the damping factor b is set to 3 in the simulation, the expected motion of the system is:",
-      "answers": {
-        "a": "Oscillatory with slowly decreasing amplitude",
-        "b": "Oscillatory with constant amplitude",
-        "c": "Non-oscillatory; the system slowly returns to equilibrium",
-        "d": "Resonant oscillation with maximum amplitude"
-      },
-      "explanations": {
-        "a": "Incorrect. That describes under-damped oscillation (b < 2√2 ≈ 2.83).",
-        "b": "Incorrect. Constant amplitude occurs only without damping.",
-        "c": "Correct. b = 3 > 2√2 ≈ 2.83 means over-damped; the displacement decays exponentially without oscillating.",
-        "d": "Incorrect. Resonance requires the driving frequency to match ω₀."
-      },
-      "correctAnswer": "c",
-      "difficulty": "intermediate"
-    },
-    {
-      "question": "8. In the experiment for the under-damped case (Case 2), the computed spring constant k uses the measured ω and the relation:",
-      "answers": {
-        "a": "k = m · ω₀²",
-        "b": "k = m(ω² + b²/4m²)",
-        "c": "k = b · ω",
-        "d": "k = ω / m"
-      },
-      "explanations": {
-        "a": "Incorrect. This applies only to the undamped case where ω = ω₀ = √(k/m).",
-        "b": "Correct. Rearranging ω = √(k/m − b²/4m²) gives k = m(ω² + b²/4m²).",
-        "c": "Incorrect. k = b·ω is dimensionally and physically incorrect.",
-        "d": "Incorrect. ω/m does not give the spring constant."
-      },
-      "correctAnswer": "b",
-      "difficulty": "advanced"
-    },
-    {
-      "question": "9. If the initial position x₀ is changed during the free oscillator experiment (Case 1), which quantity changes?",
-      "answers": {
-        "a": "The angular frequency ω₀",
-        "b": "The spring constant k",
-        "c": "The amplitude A of oscillation",
-        "d": "The time period T"
-      },
-      "explanations": {
-        "a": "Incorrect. ω₀ = √(k/m) depends only on k and m, not on initial displacement.",
-        "b": "Incorrect. k is a property of the spring and does not change with x₀.",
-        "c": "Correct. In SHM, the initial displacement x₀ sets the amplitude A of oscillation.",
-        "d": "Incorrect. T = 2π/ω₀ is independent of amplitude in SHM."
-      },
-      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "10. In the forced oscillation experiment (Case 3), what happens to the amplitude A as F₀ is increased (with ω and ω₀ fixed)?",
+      "question": "3. Which type of damping allows the system to return to equilibrium in the shortest possible time without oscillating?",
       "answers": {
-        "a": "A decreases proportionally",
-        "b": "A remains unchanged",
-        "c": "A increases proportionally to F₀",
-        "d": "A becomes zero"
+        "a": "Under damping",
+        "b": "Over damping",
+        "c": "Critical damping",
+        "d": "Free oscillation"
       },
       "explanations": {
-        "a": "Incorrect. Increasing the driving force increases the steady-state amplitude.",
-        "b": "Incorrect. Amplitude depends directly on F₀.",
-        "c": "Correct. From A = F₀/(m√[(ω²−ω₀²)²+4γ²m²]), A ∝ F₀ when all other parameters are fixed.",
-        "d": "Incorrect. Amplitude can only approach zero if F₀ → 0."
+        "a": "Not correct. Under damping produces oscillations.",
+        "b": "Not correct. Over damping takes longer to reach equilibrium.",
+        "c": "Correct. Critical damping achieves fastest return without oscillations.",
+        "d": "Not correct. Free oscillation has no damping."
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
+    },
+    {
+      "question": "4. In forced oscillation, when the frequency of the driving force matches the natural frequency of the system, the phenomenon is called:",
+      "answers": {
+        "a": "Attenuation",
+        "b": "Resonance",
+        "c": "Critical damping",
+        "d": "Superposition"
+      },
+      "explanations": {
+        "a": "Not correct. Attenuation refers to reduction of amplitude.",
+        "b": "Correct. Resonance occurs when driving and natural frequencies match.",
+        "c": "Not correct. Critical damping is related to stopping oscillations.",
+        "d": "Not correct. Superposition refers to addition of waves."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Which graph best represents displacement versus time for a free simple harmonic oscillator?",
+      "answers": {
+        "a": "Straight line with positive slope",
+        "b": "Exponential decay curve",
+        "c": "Sine or cosine wave",
+        "d": "Parabolic curve"
+      },
+      "explanations": {
+        "a": "Not correct. Straight line indicates uniform motion, not oscillation.",
+        "b": "Not correct. Exponential decay represents damping.",
+        "c": "Correct. SHM is represented by sine or cosine wave.",
+        "d": "Not correct. Parabolic is for uniformly accelerated motion."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
     }
   ]
 }

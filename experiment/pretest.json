@@ -1,175 +1,90 @@
-﻿{
+{
   "version": 2.0,
   "questions": [
     {
-      "question": "1. In simple harmonic motion, the restoring force acting on the particle is:",
+      "question": "1. Which of the following is a characteristic of free oscillations?",
       "answers": {
-        "a": "Proportional to velocity",
-        "b": "Proportional to displacement and acts in the same direction",
-        "c": "Proportional to displacement and acts opposite to it",
-        "d": "Constant in magnitude"
-      },
-      "explanations": {
-        "a": "Incorrect. That describes the damping force.",
-        "b": "Incorrect. A force in the same direction as displacement would cause the particle to move away from equilibrium.",
-        "c": "Correct. F = -kx; the restoring force is proportional to displacement and opposes it, as per Newton's second law for SHM.",
-        "d": "Incorrect. Constant force (like gravity alone) does not produce SHM."
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "2. The equation of motion for a free (undamped) oscillator is:",
-      "answers": {
-        "a": "m\uẍ + bẋ + kx = F₀ sin(ωt)",
-        "b": "m\uẍ + bẋ + kx = 0",
-        "c": "m\uẍ + kx = 0",
-        "d": "m\uẍ = F₀ sin(ωt)"
-      },
-      "explanations": {
-        "a": "Incorrect. This is the equation for a forced oscillator with damping.",
-        "b": "Incorrect. This is the equation for a damped (but not forced) oscillator.",
-        "c": "Correct. For a free undamped oscillator, both damping (b = 0) and external force (F₀ = 0) are absent.",
-        "d": "Incorrect. This represents only a forced oscillator without restoring force."
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "3. The natural angular frequency ω₀ of a simple harmonic oscillator is given by:",
-      "answers": {
-        "a": "ω₀ = k/m",
-        "b": "ω₀ = √(k/m)",
-        "c": "ω₀ = √(m/k)",
-        "d": "ω₀ = b/2m"
-      },
-      "explanations": {
-        "a": "Incorrect. This has incorrect units (s⁻²).",
-        "b": "Correct. From mẍ + kx = 0, we get ω₀ = √(k/m) rad/sec.",
-        "c": "Incorrect. This would give a lower frequency for a stiffer spring, which is physically wrong.",
-        "d": "Incorrect. b/2m is the decay constant γ, not the natural frequency."
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "4. Which condition corresponds to critical damping?",
-      "answers": {
-        "a": "b < 2√(km)",
-        "b": "b = 0",
-        "c": "b = 2√(km)",
-        "d": "b > 2√(km)"
-      },
-      "explanations": {
-        "a": "Incorrect. This is the condition for under damping.",
-        "b": "Incorrect. b = 0 means no damping — a free oscillator.",
-        "c": "Correct. Critical damping occurs when b = 2√(km), allowing the fastest return to equilibrium without oscillation.",
-        "d": "Incorrect. This is the condition for over damping."
-      },
-      "correctAnswer": "c",
-      "difficulty": "intermediate"
-    },
-    {
-      "question": "5. Resonance occurs in a forced oscillator when:",
-      "answers": {
-        "a": "Damping is maximum",
-        "b": "External force is zero",
-        "c": "Forcing frequency is much lower than natural frequency",
-        "d": "Forcing frequency is nearly equal to the natural frequency"
-      },
-      "explanations": {
-        "a": "Incorrect. High damping suppresses resonance amplitude.",
-        "b": "Incorrect. Zero external force means no forced oscillation.",
-        "c": "Incorrect. Very low driving frequency gives quasi-static response, not resonance.",
-        "d": "Correct. When ω ≈ ω₀ and damping is small, the amplitude becomes very large — resonance."
-      },
-      "correctAnswer": "d",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "6. The time period of oscillation of a liquid column in a U-tube depends on:",
-      "answers": {
-        "a": "The density of the liquid only",
-        "b": "The height h of the liquid column in one arm",
-        "c": "Both density and height of the liquid",
-        "d": "The cross-sectional area of the tube"
-      },
-      "explanations": {
-        "a": "Incorrect. T = 2π√(h/g) contains no density term.",
-        "b": "Correct. T = 2π√(h/g), so only the height h of the equilibrium liquid column matters.",
-        "c": "Incorrect. The formula T = 2π√(h/g) is independent of density.",
-        "d": "Incorrect. Cross-sectional area cancels out in the derivation."
-      },
-      "correctAnswer": "b",
-      "difficulty": "intermediate"
-    },
-    {
-      "question": "7. In damped oscillations, the amplitude A of the oscillating system is given by:",
-      "answers": {
-        "a": "A = F₀ · ω₀",
-        "b": "A = F₀ / k",
-        "c": "A = F₀ / (m√[(ω² − ω₀²)² + 4γ²m²])",
-        "d": "A = m / F₀"
-      },
-      "explanations": {
-        "a": "Incorrect. This is not dimensionally consistent for amplitude.",
-        "b": "Incorrect. This is the static displacement, not the dynamic amplitude.",
-        "c": "Correct. This is the standard amplitude formula for a driven damped harmonic oscillator.",
-        "d": "Incorrect. Amplitude cannot be m/F₀ — units do not match."
-      },
-      "correctAnswer": "c",
-      "difficulty": "intermediate"
-    },
-    {
-      "question": "8. Which of the following best describes free oscillations?",
-      "answers": {
-        "a": "Oscillations maintained by a periodic external force",
-        "b": "Oscillations where the system continuously gains energy",
-        "c": "Oscillations sustained only by internal restoring forces (gravity or elasticity) with no energy loss",
-        "d": "Oscillations where the frequency changes continuously"
+        "a": "They always require an external periodic force",
+        "b": "They occur due to internal restoring forces like gravity or elasticity",
+        "c": "Their amplitude always increases with time",
+        "d": "They cannot occur in simple pendulums"
       },
       "explanations": {
         "a": "Incorrect. That describes forced oscillations.",
-        "b": "Incorrect. In ideal free oscillations, energy is conserved (no gain or loss).",
-        "c": "Correct. Free oscillations are driven by restoring forces (F = −kx) and in the ideal case, neither gain nor lose energy.",
-        "d": "Incorrect. Frequency remains constant in free oscillations."
+        "b": "Correct. Free oscillations are maintained only by internal restoring forces.",
+        "c": "Incorrect. Amplitude remains constant in ideal free oscillations.",
+        "d": "Incorrect. Simple pendulums are classic examples of free oscillations."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. In simple harmonic motion (SHM), the restoring force is:",
+      "answers": {
+        "a": "Directly proportional to displacement and opposite in direction",
+        "b": "Proportional to velocity",
+        "c": "Constant regardless of displacement",
+        "d": "Independent of displacement"
+      },
+      "explanations": {
+        "a": "Correct. F = -kx is the fundamental law of SHM.",
+        "b": "Incorrect. That describes damping.",
+        "c": "Incorrect. Restoring force changes with displacement.",
+        "d": "Incorrect. SHM depends directly on displacement."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. What happens to the amplitude of a damped oscillator over time?",
+      "answers": {
+        "a": "It remains constant",
+        "b": "It gradually decreases",
+        "c": "It gradually increases",
+        "d": "It fluctuates randomly"
+      },
+      "explanations": {
+        "a": "Incorrect. Constant amplitude occurs only in ideal free oscillations.",
+        "b": "Correct. Damping reduces amplitude due to resistive forces.",
+        "c": "Incorrect. Energy is lost, not gained.",
+        "d": "Incorrect. The decrease is systematic, not random."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which of the following is an example of a forced oscillator?",
+      "answers": {
+        "a": "A tuning fork vibrating in air",
+        "b": "A car suspension system",
+        "c": "A pendulum pushed periodically by hand",
+        "d": "A simple pendulum oscillating freely"
+      },
+      "explanations": {
+        "a": "Incorrect. That’s an example of free oscillations.",
+        "b": "Partially correct. Suspensions involve damping mainly.",
+        "c": "Correct. The pendulum matches the frequency of the applied periodic force.",
+        "d": "Incorrect. That is a free oscillator."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "9. The decay constant γ (gamma) in a damped oscillator is related to the damping factor b and mass m by:",
+      "question": "5. At resonance in a lightly damped forced oscillator:",
       "answers": {
-        "a": "γ = b / m",
-        "b": "γ = m / 2b",
-        "c": "γ = b / 2m",
-        "d": "γ = 2m / b"
+        "a": "Amplitude becomes maximum",
+        "b": "Amplitude becomes zero",
+        "c": "Amplitude remains constant at all frequencies",
+        "d": "Oscillations stop completely"
       },
       "explanations": {
-        "a": "Incorrect. This would give twice the correct value.",
-        "b": "Incorrect. Inverted ratio gives wrong units and magnitude.",
-        "c": "Correct. From the solution x(t) = Ae^(−γt)cos(ωt + φ), we have γ = b/2m.",
-        "d": "Incorrect. This is the reciprocal of the correct expression."
+        "a": "Correct. Resonance occurs when driving frequency equals natural frequency, giving maximum amplitude.",
+        "b": "Incorrect. Amplitude does not vanish.",
+        "c": "Incorrect. Amplitude depends on driving frequency.",
+        "d": "Incorrect. Oscillations only stop with infinite damping."
       },
-      "correctAnswer": "c",
-      "difficulty": "intermediate"
-    },
-    {
-      "question": "10. In coupled oscillators, energy is:",
-      "answers": {
-        "a": "Confined to only one oscillator at all times",
-        "b": "Periodically exchanged between the connected oscillators",
-        "c": "Always zero since they oppose each other",
-        "d": "Present only as kinetic energy"
-      },
-      "explanations": {
-        "a": "Incorrect. The whole point of coupling is that energy moves between the oscillators.",
-        "b": "Correct. Coupled oscillators exchange energy back and forth, producing characteristic beat-like patterns.",
-        "c": "Incorrect. The energy is non-zero and shared dynamically.",
-        "d": "Incorrect. Energy alternates between kinetic and potential in each oscillator."
-      },
-      "correctAnswer": "b",
-      "difficulty": "intermediate"
+      "correctAnswer": "a",
+      "difficulty": "beginner"
     }
   ]
 }
