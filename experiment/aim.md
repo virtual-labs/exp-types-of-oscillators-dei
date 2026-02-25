@@ -1,1 +1,1 @@
-﻿To study the types of oscillators: Simple Harmonic Oscillator (Free Oscillator), Damped Oscillator (Under-damped, Critically-damped and Over-damped), and Forced Oscillator; to understand their equations of motion, nature of oscillations, and behaviour under varying damping and driving conditions.
+﻿To study the types of oscillators: Simple harmonic, Damped and Forced oscillators.
