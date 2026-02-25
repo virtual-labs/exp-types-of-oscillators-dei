@@ -75,6 +75,24 @@
       </div>
     </main>
 
+    <!-- Experiment Case Selector -->
+    <div id="case-selector" style="padding: 15px; margin: 20px auto; text-align: center; display: block; width: 100%; max-width: 1200px; background: #f5f5f5; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); z-index: 1000; position: relative;">
+      <h3 style="margin: 0 0 15px 0; color: #00695c; font-family: 'Poppins', sans-serif; font-size: 1.2em;">Select Experiment Case</h3>
+      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <fieldset id="caseFree" title="Free Oscillation" style="border: 2px solid #00897b; border-radius: 8px; padding: 10px 20px; background-color: #ffffff; cursor: pointer; transition: all 0.3s ease;">
+          <input id="caseFree.radio" type="radio" name="caseSelector" value="free" checked>
+          <label id="caseFree.label" for="caseFree.radio" style="display: inline-block; cursor: pointer; font-weight: 500; color: #00695c; margin-left: 5px;">Case 1 – Free Oscillation</label>
+        </fieldset>
+        <fieldset id="caseDamped" title="Damped Oscillation" style="border: 2px solid #00897b; border-radius: 8px; padding: 10px 20px; background-color: #ffffff; cursor: pointer; transition: all 0.3s ease;">
+          <input id="caseDamped.radio" type="radio" name="caseSelector" value="damped">
+          <label id="caseDamped.label" for="caseDamped.radio" style="display: inline-block; cursor: pointer; font-weight: 500; color: #00695c; margin-left: 5px;">Case 2 – Damped Oscillation</label>
+        </fieldset>
+        <fieldset id="caseForced" title="Forced Oscillation" style="border: 2px solid #00897b; border-radius: 8px; padding: 10px 20px; background-color: #ffffff; cursor: pointer; transition: all 0.3s ease;">
+          <input id="caseForced.radio" type="radio" name="caseSelector" value="forced">
+          <label id="caseForced.label" for="caseForced.radio" style="display: inline-block; cursor: pointer; font-weight: 500; color: #00695c; margin-left: 5px;">Case 3 – Forced Oscillation</label>
+        </fieldset>
+      </div>
+    </div>
 
     <div role="button" id="_topFrame" style="text-align:center"><span id="textResizeControl"
         style="position: absolute; left: -9999px;">&nbsp;</span>
