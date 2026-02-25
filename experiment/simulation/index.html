@@ -75,6 +75,24 @@
       </div>
     </main>
 
+    <!-- Experiment Case Selector -->
+    <div id="case-selector" style="padding: 15px; margin: 20px auto; text-align: center; display: block; width: 100%; max-width: 1200px; background: #f5f5f5; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); z-index: 1000; position: relative;">
+      <h3 style="margin: 0 0 15px 0; color: #00695c; font-family: 'Poppins', sans-serif; font-size: 1.2em;">Select Experiment Case</h3>
+      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <fieldset id="caseFree" title="Free Oscillation" style="border: 2px solid #00897b; border-radius: 8px; padding: 10px 20px; background-color: #ffffff; cursor: pointer; transition: all 0.3s ease;">
+          <input id="caseFree.radio" type="radio" name="caseSelector" value="free" checked>
+          <label id="caseFree.label" for="caseFree.radio" style="display: inline-block; cursor: pointer; font-weight: 500; color: #00695c; margin-left: 5px;">Case 1 – Free Oscillation</label>
+        </fieldset>
+        <fieldset id="caseDamped" title="Damped Oscillation" style="border: 2px solid #00897b; border-radius: 8px; padding: 10px 20px; background-color: #ffffff; cursor: pointer; transition: all 0.3s ease;">
+          <input id="caseDamped.radio" type="radio" name="caseSelector" value="damped">
+          <label id="caseDamped.label" for="caseDamped.radio" style="display: inline-block; cursor: pointer; font-weight: 500; color: #00695c; margin-left: 5px;">Case 2 – Damped Oscillation</label>
+        </fieldset>
+        <fieldset id="caseForced" title="Forced Oscillation" style="border: 2px solid #00897b; border-radius: 8px; padding: 10px 20px; background-color: #ffffff; cursor: pointer; transition: all 0.3s ease;">
+          <input id="caseForced.radio" type="radio" name="caseSelector" value="forced">
+          <label id="caseForced.label" for="caseForced.radio" style="display: inline-block; cursor: pointer; font-weight: 500; color: #00695c; margin-left: 5px;">Case 3 – Forced Oscillation</label>
+        </fieldset>
+      </div>
+    </div>
 
     <div role="button" id="_topFrame" style="text-align:center"><span id="textResizeControl"
         style="position: absolute; left: -9999px;">&nbsp;</span>
@@ -449,31 +467,35 @@
                 type="checkbox"><label id="showVelocityCheckBox.label" style="display: inline-block;">V</label>
             </fieldset>
           </div>
-          <div id="displacementSliderPanel" style="padding: 0px; margin: 0px auto; text-align: center; display: none;">
-            <button id="displacementLabel" title="Initial displacement"
-              style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;"><i>x<sub>0</sub></i>:</button><input
-              type="number" id="displacementField" title="Initial displacement"
-              style="width: 35px; background-color: white;">
-              <button id="displacementLabel2" title="Initial displacement" style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">m</button>
+          <div id="control-x0" class="control-group">
+            <div id="displacementSliderPanel" style="padding: 0px; margin: 0px auto; text-align: center; display: none;">
+              <button id="displacementLabel" title="Initial displacement"
+                style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;"><i>x<sub>0</sub></i>:</button><input
+                type="number" id="displacementField" title="Initial displacement"
+                style="width: 35px; background-color: white;">
+                <button id="displacementLabel2" title="Initial displacement" style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">m</button>
+            </div>
           </div>
         </div>
         <div id="parameterPanel" style="padding: 0px; margin: 0px auto; text-align: center; display: none;">
           <div id="parameterPanelTop" style="padding: 0px; margin: 0px auto; text-align: center; display: block;">
-            <div id="bSliderPanel" class="slider-panel"
-              style="padding: 0px; margin: 0px auto; text-align: center; display: inline-block;">
-              <button id="bLabel"
-                style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;"><i>b</i>:</button>
-              <div class="slider-controls">
-                <div id="bSlider"
-                  style="display: inline-block; overflow: hidden; text-align: left; vertical-align: middle; user-select: none;">
-                  <label id="bSlider.label" style="float: left;"></label>
-                  <div id="bSlider.div2" style="overflow: hidden;"><input type="range" id="bSlider.slider" max="10"
-                      step="0.01" min="0" style="vertical-align: middle; width: 98%; height: 98%;"></div>
+            <div id="control-damping" class="control-group">
+              <div id="bSliderPanel" class="slider-panel"
+                style="padding: 0px; margin: 0px auto; text-align: center; display: inline-block;">
+                <button id="bLabel"
+                  style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;"><i>b</i>:</button>
+                <div class="slider-controls">
+                  <div id="bSlider"
+                    style="display: inline-block; overflow: hidden; text-align: left; vertical-align: middle; user-select: none;">
+                    <label id="bSlider.label" style="float: left;"></label>
+                    <div id="bSlider.div2" style="overflow: hidden;"><input type="range" id="bSlider.slider" max="10"
+                        step="0.01" min="0" style="vertical-align: middle; width: 98%; height: 98%;"></div>
+                  </div>
+                  <input type="number" id="bField" title="damping coefficient"
+                    style="width: 40px; background-color: white; border: 2px;">
+                  <button id="bLabel2"
+                    style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">Ns/m</button>
                 </div>
-                <input type="number" id="bField" title="damping coefficient"
-                  style="width: 40px; background-color: white; border: 2px;">
-                <button id="bLabel2"
-                  style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">Ns/m</button>
               </div>
             </div>
             <div id="v0SliderPanel" class="slider-panel"
@@ -495,29 +517,33 @@
             </div>
           </div>
           <div id="parameterPanelBottom" style="padding: 0px; margin: 0px auto; text-align: center; display: block;">
-            <div id="wSliderPanel" style="padding: 0px; margin: 0px auto; text-align: center; display: inline-block;">
-              <button id="wLabel"
-                style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">ω:</button>
-              <div id="wSlider"
-                style="display: inline-block; overflow: hidden; text-align: left; vertical-align: middle; user-select: none;">
-                <label id="wSlider.label" style="float: left;"></label>
-                <div id="wSlider.div2" style="overflow: hidden;"><input type="range" id="wSlider.slider" max="5"
-                    step="0.01" min="0" style="vertical-align: middle; width: 98%; height: 98%;"></div>
-              </div><input type="number" id="wField" title="driving frequency (rad/s)"
-                style="width: 40px; background-color: white;"><button id="wLabel2"
-                style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">rad/s</button>
+            <div id="control-frequency" class="control-group">
+              <div id="wSliderPanel" style="padding: 0px; margin: 0px auto; text-align: center; display: inline-block;">
+                <button id="wLabel"
+                  style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">ω:</button>
+                <div id="wSlider"
+                  style="display: inline-block; overflow: hidden; text-align: left; vertical-align: middle; user-select: none;">
+                  <label id="wSlider.label" style="float: left;"></label>
+                  <div id="wSlider.div2" style="overflow: hidden;"><input type="range" id="wSlider.slider" max="5"
+                      step="0.01" min="0" style="vertical-align: middle; width: 98%; height: 98%;"></div>
+                </div><input type="number" id="wField" title="driving frequency (rad/s)"
+                  style="width: 40px; background-color: white;"><button id="wLabel2"
+                  style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">rad/s</button>
+              </div>
             </div>
-            <div id="F0SliderPanel" style="padding: 0px; margin: 0px auto; text-align: center; display: inline-block;">
-              <button id="F0Label"
-                style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;"><i>F<sub>0</sub></i>:</button>
-              <div id="F0Slider"
-                style="display: inline-block; overflow: hidden; text-align: left; vertical-align: middle; user-select: none;">
-                <label id="F0Slider.label" style="float: left;"></label>
-                <div id="F0Slider.div2" style="overflow: hidden;"><input type="range" id="F0Slider.slider" max="6"
-                    step="0.01" min="-6" style="vertical-align: middle; width: 98%; height: 98%;"></div>
-              </div><input type="number" id="F0Field" title="driving amplitude"
-                style="width: 40px; background-color: white;"><button id="F0Label2"
-                style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">N</button>
+            <div id="control-force" class="control-group">
+              <div id="F0SliderPanel" style="padding: 0px; margin: 0px auto; text-align: center; display: inline-block;">
+                <button id="F0Label"
+                  style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;"><i>F<sub>0</sub></i>:</button>
+                <div id="F0Slider"
+                  style="display: inline-block; overflow: hidden; text-align: left; vertical-align: middle; user-select: none;">
+                  <label id="F0Slider.label" style="float: left;"></label>
+                  <div id="F0Slider.div2" style="overflow: hidden;"><input type="range" id="F0Slider.slider" max="6"
+                      step="0.01" min="-6" style="vertical-align: middle; width: 98%; height: 98%;"></div>
+                </div><input type="number" id="F0Field" title="driving amplitude"
+                  style="width: 40px; background-color: white;"><button id="F0Label2"
+                  style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">N</button>
+              </div>
             </div>
           </div>
         </div>
@@ -542,6 +568,7 @@
           _model._fontResized(iBase);
         };
         _model.onload();
+        updateControlsVisibility();
       }, false);
   </script>
 
@@ -646,6 +673,56 @@
 
   <!-- Responsive Enhancement Script -->
   <script src="responsive-enhancements.js"></script>
+
+  <!-- Experiment Case Selector Script -->
+  <script type="text/javascript">
+    // Initialize case selector when DOM is ready
+    window.addEventListener('load', function() {
+      // Get all radio buttons
+      var caseRadios = document.querySelectorAll('input[name="caseSelector"]');
+      
+      // Set initial value based on checked radio (Case 1 - Free Oscillation)
+      var checkedRadio = document.querySelector('input[name="caseSelector"]:checked');
+      if (checkedRadio && typeof setExperimentCase === 'function') {
+        setExperimentCase(checkedRadio.value);
+      }
+
+      // Add event listeners to all radio buttons
+      caseRadios.forEach(function(radio) {
+        radio.addEventListener('change', function() {
+          if (this.checked) {
+            // Call setExperimentCase function
+            if (typeof setExperimentCase === 'function') {
+              setExperimentCase(this.value);
+            }
+            
+            // Update fieldset styling to show selected state
+            var allFieldsets = document.querySelectorAll('#case-selector fieldset');
+            allFieldsets.forEach(function(fieldset) {
+              fieldset.style.backgroundColor = '#ffffff';
+              fieldset.style.borderColor = '#00897b';
+            });
+            
+            // Highlight selected fieldset
+            var selectedFieldset = this.closest('fieldset');
+            if (selectedFieldset) {
+              selectedFieldset.style.backgroundColor = '#e3f2fd';
+              selectedFieldset.style.borderColor = '#00695c';
+            }
+          }
+        });
+      });
+
+      // Initialize styling for checked radio (Case 1)
+      if (checkedRadio) {
+        var checkedFieldset = checkedRadio.closest('fieldset');
+        if (checkedFieldset) {
+          checkedFieldset.style.backgroundColor = '#e3f2fd';
+          checkedFieldset.style.borderColor = '#00695c';
+        }
+      }
+    });
+  </script>
 
 </body>
 
