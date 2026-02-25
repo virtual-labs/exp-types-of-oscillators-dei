@@ -1,4 +1,4 @@
-﻿<h2>Simple Harmonic Motion</h2>
+<h2>Simple Harmonic Motion</h2>
 <p>Simple harmonic motion (SHM) is a type of oscillating motion. A pendulum or an object hanging from a spring will oscillate harmonically when there is a small deviation from its equilibrium or rest state. A restoring force proportionate to <em>x</em> is created when slight displacement <em>x</em> occurs from the equilibrium position. This force always acts in the opposite direction of the displacement, towards the equilibrium position.</p>
 
 <p><strong>F = &minus;kx &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1)</strong></p>
