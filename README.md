@@ -23,4 +23,6 @@ Forced Oscillators
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
+2 | Deepak kumar | Student | Physics and Computer Science | Dayalbagh Educational Institute(D.E.I.) | kumar041232@gmail.com
 1 | Sania Verma | Student | Mechanical Engineering | Dayalbagh Educational Institute(D.E.I.) | saniav2711@gmail.com
+
