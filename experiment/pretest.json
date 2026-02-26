@@ -85,6 +85,91 @@
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
+    },
+    {
+      "question": "6. The natural angular frequency of a mass-spring system is given by:",
+      "answers": {
+        "a": "ω₀ = √(m/k)",
+        "b": "ω₀ = √(k/m)",
+        "c": "ω₀ = k/m",
+        "d": "ω₀ = m/k"
+      },
+      "explanations": {
+        "a": "Incorrect. This is the inverse of the correct formula.",
+        "b": "Correct. ω₀ = √(k/m) is derived from the restoring force equation F = -kx.",
+        "c": "Incorrect. This does not have units of angular frequency.",
+        "d": "Incorrect. This is also dimensionally incorrect."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "7. Which of the following best describes Simple Harmonic Motion (SHM)?",
+      "answers": {
+        "a": "Motion with constant velocity",
+        "b": "Motion in which acceleration is proportional to and directed away from equilibrium",
+        "c": "Motion in which acceleration is proportional to and directed towards equilibrium",
+        "d": "Motion driven by a periodic external force"
+      },
+      "explanations": {
+        "a": "Incorrect. SHM involves periodic acceleration, not constant velocity.",
+        "b": "Incorrect. Acceleration in SHM is directed towards equilibrium, not away.",
+        "c": "Correct. In SHM, a = -(k/m)x, always directed towards equilibrium.",
+        "d": "Incorrect. That describes forced oscillation."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "8. In an LC oscillator, which quantities oscillate analogous to SHM?",
+      "answers": {
+        "a": "Resistance and current",
+        "b": "Charge and current",
+        "c": "Voltage and resistance",
+        "d": "Power and energy"
+      },
+      "explanations": {
+        "a": "Incorrect. Resistance is not an oscillating quantity in an LC circuit.",
+        "b": "Correct. Charge q and current i oscillate between the inductor and capacitor.",
+        "c": "Incorrect. Resistance is not an oscillating quantity.",
+        "d": "Incorrect. Power and energy do not oscillate in the LC analogy."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "9. What is the time period of a liquid column oscillating in a U-tube of height h?",
+      "answers": {
+        "a": "T = 2π√(g/h)",
+        "b": "T = 2π√(h/g)",
+        "c": "T = π√(h/g)",
+        "d": "T = 2π(h/g)"
+      },
+      "explanations": {
+        "a": "Incorrect. The formula has h in the numerator under the square root.",
+        "b": "Correct. T = 2π√(h/g), independent of the density of the liquid.",
+        "c": "Incorrect. The coefficient should be 2π, not π.",
+        "d": "Incorrect. The square root is missing."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "10. In an ideal free oscillator (no damping, no driving force), the governing equation of motion is:",
+      "answers": {
+        "a": "mẍ + bẋ + kx = F₀ sin(ωt)",
+        "b": "mẍ + bẋ + kx = 0",
+        "c": "mẍ + kx = 0",
+        "d": "mẍ = F₀ sin(ωt)"
+      },
+      "explanations": {
+        "a": "Incorrect. This includes both damping and external forcing.",
+        "b": "Incorrect. This includes damping (b ≠ 0).",
+        "c": "Correct. For a free oscillator, both b = 0 and F₀ = 0, giving mẍ + kx = 0.",
+        "d": "Incorrect. This represents only forced motion without restoring force."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
     }
   ]
 }

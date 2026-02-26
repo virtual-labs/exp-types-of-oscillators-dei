@@ -44,9 +44,6 @@
     content="Interactive Simple Harmonic Motion Simulator - Explore physics concepts with real-time visualization">
   <meta name="theme-color" content="#2196F3">
 
-  <!-- Responsive CSS -->
-  <link rel="stylesheet" type="text/css" href="responsive-layout.css">
-
   <script type="text/javascript"></script>
   <!-- <link rel="stylesheet" type="text/css" href="./Driven Damped Harmonic Motion_files/ejss(1).css">
   <script type="text/javascript" src="./Driven Damped Harmonic Motion_files/EJSS.js.download"></script> -->
@@ -88,19 +85,19 @@
         <div class="damping-controls">
           <fieldset id="manual" title="Manual damping" style="border: 0px; display: inline-block;"><input
               id="manual.radio" type="radio" name="animationPanel">
-            <label id="manual.label" style="display: inline-block;">Manual</label>
+            <label id="manual.label" for="manual.radio" style="display: inline-block;">Manual</label>
           </fieldset>
           <fieldset id="underDamped" title="Under damped" style="border: 0px; display: inline-block;">
             <input id="underDamped.radio" type="radio" name="animationPanel">
-            <label id="underDamped.label" style="display: inline-block;">Under</label>
+            <label id="underDamped.label" for="underDamped.radio" style="display: inline-block;">Under</label>
           </fieldset>
           <fieldset id="overDamped" title="Over damped" style="border: 0px; display: inline-block;"><input
               id="overDamped.radio" type="radio" name="animationPanel">
-            <label id="overDamped.label" style="display: inline-block;">Over</label>
+            <label id="overDamped.label" for="overDamped.radio" style="display: inline-block;">Over</label>
           </fieldset>
           <fieldset id="criticallyDamped" title="Critically damped" style="border: 0px; display: inline-block;"><input
               id="criticallyDamped.radio" type="radio" name="animationPanel">
-            <label id="criticallyDamped.label" style="display: inline-block;">Critical</label>
+            <label id="criticallyDamped.label" for="criticallyDamped.radio" style="display: inline-block;">Critical</label>
           </fieldset>
         </div>
       </div>
@@ -111,7 +108,8 @@
         <div id="plotpanel"
           style="padding: 0px; margin: 0px auto; text-align: center; display: block; height: 80%; width: 975px;">
           <svg id="plottingPanel" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%"
-            style="overflow: hidden; cursor: default;">
+            viewBox="0 0 975 480" preserveAspectRatio="xMidYMid meet"
+            style="overflow: visible; cursor: default;">
             <defs>
 
             </defs>
@@ -332,7 +330,8 @@
         <div id="graphpanel"
           style="padding: 0px; margin: 0px auto; text-align: center; display: block; height: 20%; width: 975px;">
           <svg id="drawingPanel" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%"
-            style="overflow: hidden; cursor: default;">
+            viewBox="0 0 975 120" preserveAspectRatio="xMidYMid meet"
+            style="overflow: visible; cursor: default;">
             <defs>
               <marker id="vArrow.end" viewBox="-2 -2 4.233337522834988 4.233337522834988" refX="0.11666876141749433"
                 refY="0.11666876141749433" markerUnits="userSpaceOnUse" markerWidth="4.233337522834988"
@@ -359,8 +358,8 @@
               fill="none" stroke="black" stroke-width="0.5" shapeRendering="auto" visibility="visible" transform="">
             </path>
 
-            <rect id="springBob" cx="327.9395479399611" cy="40" rx="20.28125" ry="20.28125" fill="red" stroke="Black"
-              stroke-width="0.5" shapeRendering="auto" visibility="visible" transform=""></rect>
+            <rect id="springBob" x="317.9395479399611" y="29.71875" width="20.28125" height="20.28125" fill="red" stroke="Black"
+              stroke-width="0.5" shape-rendering="auto" visibility="visible" transform=""></rect>
             <path id="vArrow" marker-end="url(#vArrow.end)"
               d="M 327.9395479399611 12.958333333333343 L 327.47287289429113 12.958333333333343" fill="Blue"
               stroke="black" stroke-width="2" shapeRendering="auto" visibility="hidden" transform=""></path>
@@ -454,7 +453,8 @@
               style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;"><i>x<sub>0</sub></i>:</button><input
               type="number" id="displacementField" title="Initial displacement"
               style="width: 35px; background-color: white;">
-              <button id="displacementLabel2" title="Initial displacement" style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">m</button>
+            <button id="displacementLabel2" title="Initial displacement"
+              style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px;">m</button>
           </div>
         </div>
         <div id="parameterPanel" style="padding: 0px; margin: 0px auto; text-align: center; display: none;">
@@ -551,43 +551,406 @@
     (function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
   </script>
 
- 
-  <!-- Experiment Info Section -->
-  <div class="experiment-info">
-    <h2>Simple Harmonic Motion - Experiment Information</h2>
-    <p><strong>Definition:</strong> Simple Harmonic Motion (SHM) is a type of periodic motion where the restoring force
-      is directly proportional to the displacement and acts in the direction opposite to that of displacement.</p>
 
-    <p><strong>Examples:</strong> Common examples of SHM include pendulum swings and mass-spring systems.</p>
+  <!-- ═══════════════════════════════════════════════════════════
+       SIMULATION GUIDE — Attractive, content-rich section
+       ═══════════════════════════════════════════════════════════ -->
+  <div class="sim-guide-wrapper">
 
-    <h3 style="text-align:left;"> Equation of motion:</h3>
-    <p><img src="eq55.png" alt="shock absorbers" width=250px style="margin-top: 20px;"></p>
-    <h3 style="text-align:left;">Parameters used in equation</h3>
-    <ul style="list-style: none;">
-      <li>m: mass of the ball in kg</li>
-      <li>b: damping factor in Ns/m</li>
-      <li>k: spring constant in N/m</li>
-      <li> v<sub>o</sub>: initial velocity in m/sec</li>
-      <li> ω: driven frequency in rad/sec</li>
-      <li>F<sub>o</sub>:Force in N</li>
-      <li>x<sub>o</sub>:initial displacement in m</li>
-      <li>t: time period in `sec`</li>
-      <li>V: mass velocity</li>
-    </ul>
+    <!-- ── HEADER ── -->
+    <div class="sim-guide-header">
+      <div class="sim-guide-header-icon">⚛</div>
+      <div>
+        <h2 style="color: #90caf9;">Types of Oscillators — Simulation Guide</h2>
+        <p>Explore Simple Harmonic, Damped, and Forced oscillations interactively.</p>
+      </div>
+    </div>
 
-    <p><strong>Experiment Features:</strong></p>
-    <ul style="list-style: none;">
-      <li>Interactive simulation of SHM</li>
-      <li>Adjustable amplitude, frequency, and phase</li>
-      <li>Real-time graph plotting</li>
-      <li>Clear visualization of motion parameters</li>
-    </ul>
-  </div>
+    <!-- ── EQUATION CARD ── -->
+    <div class="sim-section-card">
+      <h3><span class="sim-section-icon">📐</span> Governing Equation of Motion</h3>
+      <div class="sim-equation-box">
+        <span class="sim-eq-symbol">m</span><span class="sim-eq-op">ẍ</span>
+        <span class="sim-eq-op"> + </span>
+        <span class="sim-eq-symbol">b</span><span class="sim-eq-op">ẋ</span>
+        <span class="sim-eq-op"> + </span>
+        <span class="sim-eq-symbol">k</span><span class="sim-eq-op">x</span>
+        <span class="sim-eq-op"> = </span>
+        <span class="sim-eq-symbol">F₀</span><span class="sim-eq-op"> sin(ωt + φ)</span>
+      </div>
+      <div class="sim-param-grid">
+        <div class="sim-param-item"><span class="sim-param-sym">m</span><span class="sim-param-desc">Mass of the ball <em>(kg)</em></span></div>
+        <div class="sim-param-item"><span class="sim-param-sym">b</span><span class="sim-param-desc">Damping factor <em>(Ns/m)</em></span></div>
+        <div class="sim-param-item"><span class="sim-param-sym">k</span><span class="sim-param-desc">Spring constant <em>(N/m)</em></span></div>
+        <div class="sim-param-item"><span class="sim-param-sym">x₀</span><span class="sim-param-desc">Initial displacement <em>(m)</em></span></div>
+        <div class="sim-param-item"><span class="sim-param-sym">v₀</span><span class="sim-param-desc">Initial velocity <em>(m/s)</em></span></div>
+        <div class="sim-param-item"><span class="sim-param-sym">ω</span><span class="sim-param-desc">Driving frequency <em>(rad/s)</em></span></div>
+        <div class="sim-param-item"><span class="sim-param-sym">F₀</span><span class="sim-param-desc">Driving amplitude <em>(N)</em></span></div>
+        <div class="sim-param-item"><span class="sim-param-sym">φ</span><span class="sim-param-desc">Phase angle <em>(rad)</em></span></div>
+      </div>
+    </div>
 
-  <footer >
+    <!-- ── OSCILLATOR TYPES ── -->
+    <div class="sim-section-card">
+      <h3><span class="sim-section-icon">🔬</span> Types of Oscillators</h3>
+      <div class="sim-types-grid">
+        <div class="sim-type-card sim-type-free">
+          <!-- <div class="sim-type-icon">🎵</div> -->
+          <h4>Free Oscillator</h4>
+          <p>No damping (b = 0) and no driving force (F₀ = 0). The mass oscillates indefinitely at its <strong>natural frequency</strong> ω₀ = √(k/m).</p>
+          <div class="sim-type-condition">Condition: b = 0, F₀ = 0</div>
+          <div class="sim-type-example">e.g. Ideal pendulum, LC circuit</div>
+        </div>
+        <div class="sim-type-card sim-type-damped">
+          <!-- <div class="sim-type-icon">🌊</div> -->
+          <h4>Damped Oscillator</h4>
+          <p>Energy is lost to friction/resistance. Amplitude <strong>decreases exponentially</strong>: x(t) = Ae<sup>−γt</sup>cos(ωt + φ)</p>
+          <div class="sim-type-badges">
+            <span class="sim-badge under">Under: b &lt; 2√(km)</span>
+            <span class="sim-badge critical">Critical: b = 2√(km)</span>
+            <span class="sim-badge over">Over: b &gt; 2√(km)</span>
+          </div>
+          <div class="sim-type-example">e.g. Shock absorbers, pendulum in air</div>
+        </div>
+        <div class="sim-type-card sim-type-forced">
+          <!-- <div class="sim-type-icon">⚡</div> -->
+          <h4>Forced Oscillator</h4>
+          <p>An external periodic force drives the system. At <strong>resonance</strong> (ω = ω₀), amplitude peaks dramatically.</p>
+          <div class="sim-type-condition">Condition: F₀ ≠ 0</div>
+          <div class="sim-type-example">e.g. Pushed swing, resonating wineglass</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PROCESS FLOW ── -->
+    <div class="sim-section-card">
+      <h3><span class="sim-section-icon">🔄</span> Simulation Process Flow</h3>
+      <div class="sim-flow">
+        <div class="sim-flow-step">
+          <div class="sim-flow-num">1</div>
+          <div class="sim-flow-content">
+            <h5>Select Oscillator Type</h5>
+            <p>Choose <strong>Manual</strong>, <strong>Under</strong>, <strong>Critical</strong>, or <strong>Over</strong> damping using the radio buttons in the control panel.</p>
+          </div>
+        </div>
+        <div class="sim-flow-arrow">▼</div>
+        <div class="sim-flow-step">
+          <div class="sim-flow-num">2</div>
+          <div class="sim-flow-content">
+            <h5>Set Parameters</h5>
+            <p>Adjust sliders for <strong>b</strong> (damping), <strong>v₀</strong> (initial velocity), <strong>ω</strong> (driving frequency), and <strong>F₀</strong> (driving force). Initial displacement <strong>x₀</strong> appears after pressing Play.</p>
+          </div>
+        </div>
+        <div class="sim-flow-arrow">▼</div>
+        <div class="sim-flow-step">
+          <div class="sim-flow-num">3</div>
+          <div class="sim-flow-content">
+            <h5>Run the Simulation</h5>
+            <p>Press the <strong>▶ Play/Pause</strong> button to start. Watch the spring-mass system animate on the left canvas and the displacement (red) / velocity (blue) traces appear on the graph in real time.</p>
+          </div>
+        </div>
+        <div class="sim-flow-arrow">▼</div>
+        <div class="sim-flow-step">
+          <div class="sim-flow-num">4</div>
+          <div class="sim-flow-content">
+            <h5>Toggle Velocity Trace</h5>
+            <p>Check the <strong>V</strong> checkbox to overlay the velocity curve (blue) on the displacement graph. This reveals the 90° phase difference between x(t) and v(t).</p>
+          </div>
+        </div>
+        <div class="sim-flow-arrow">▼</div>
+        <div class="sim-flow-step">
+          <div class="sim-flow-num">5</div>
+          <div class="sim-flow-content">
+            <h5>Observe &amp; Analyse</h5>
+            <p>Compare how the amplitude envelope changes across damping types. Increase ω towards ω₀ to witness <strong>resonance</strong> — the maximum amplitude spike.</p>
+          </div>
+        </div>
+        <div class="sim-flow-arrow">▼</div>
+        <div class="sim-flow-step">
+          <div class="sim-flow-num">6</div>
+          <div class="sim-flow-content">
+            <h5>Reset &amp; Repeat</h5>
+            <p>Use <strong>Reset Time</strong> to clear the graph trace, or <strong>Reset Simulation</strong> to restore all parameters to their default values. Try a new configuration!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CONTROL LEGEND ── -->
+    <div class="sim-section-card">
+      <h3><span class="sim-section-icon">🎮</span> Controls Reference</h3>
+      <div class="sim-controls-table">
+        <div class="sim-ctrl-row sim-ctrl-header">
+          <span>Control</span><span>Action</span><span>Effect on Simulation</span>
+        </div>
+        <div class="sim-ctrl-row">
+          <span>▶ / ⏸ Play/Pause</span>
+          <span>Start or pause</span>
+          <span>Begins/halts the animation and graph plotting</span>
+        </div>
+        <div class="sim-ctrl-row">
+          <span>⏹ Reset Time</span>
+          <span>Clear traces</span>
+          <span>Erases graph history; keeps current parameters</span>
+        </div>
+        <div class="sim-ctrl-row">
+          <span>🔄 Reset Simulation</span>
+          <span>Full reset</span>
+          <span>Restores all parameters and clears the canvas</span>
+        </div>
+        <div class="sim-ctrl-row">
+          <span>b slider</span>
+          <span>Damping factor</span>
+          <span>0 → free; 2.8 → critical; &gt;2.8 → over-damped</span>
+        </div>
+        <div class="sim-ctrl-row">
+          <span>v₀ slider</span>
+          <span>Initial velocity</span>
+          <span>Sets velocity at t = 0; affects starting momentum</span>
+        </div>
+        <div class="sim-ctrl-row">
+          <span>ω slider</span>
+          <span>Driving frequency</span>
+          <span>Approach ω₀ ≈ 1 rad/s for resonance peak</span>
+        </div>
+        <div class="sim-ctrl-row">
+          <span>F₀ slider</span>
+          <span>Driving amplitude</span>
+          <span>0 → no external force (free/damped modes)</span>
+        </div>
+        <div class="sim-ctrl-row">
+          <span>V checkbox</span>
+          <span>Velocity trace</span>
+          <span>Overlays blue v(t) curve on the graph</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TIPS ── -->
+    <div class="sim-section-card sim-tips-card">
+      <h3><span class="sim-section-icon">💡</span> Quick Tips</h3>
+      <ul class="sim-tips-list">
+        <li><strong>Find resonance:</strong> Set b to a small value (~0.5), set F₀ &gt; 0, then slowly increase ω from 0 to 2 rad/s — watch the amplitude explode near ω = 1.</li>
+        <li><strong>Critical vs Over:</strong> Select "Critical" mode and compare the return-to-equilibrium speed with "Over" — critical is always faster.</li>
+        <li><strong>Phase difference:</strong> Enable the V checkbox; notice displacement and velocity curves are always exactly 90° apart in undamped SHM.</li>
+        <li><strong>Energy loss:</strong> In "Under" mode, each successive peak is smaller by a factor of e<sup>−γT</sup> where T is the period.</li>
+      </ul>
+    </div>
+
+  </div><!-- end .sim-guide-wrapper -->
+
+  <style>
+    /* ── Simulation Guide Styles ── */
+    .sim-guide-wrapper {
+      max-width: 1100px;
+      margin: 36px auto;
+      padding: 0 18px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .sim-guide-header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: linear-gradient(135deg, #004d40, #00897b);
+      border-radius: 16px;
+      padding: 24px 28px;
+      color: white;
+      margin-bottom: 24px;
+      box-shadow: 0 6px 20px rgba(0,77,64,0.25);
+    }
+    .sim-guide-header-icon {
+      font-size: 3rem;
+      flex-shrink: 0;
+    }
+    .sim-guide-header h2 {
+      margin: 0 0 6px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .sim-guide-header p {
+      margin: 0;
+      opacity: 0.88;
+      font-size: 0.95rem;
+    }
+    .sim-section-card {
+      background: white;
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      border-left: 5px solid #00897b;
+    }
+    .sim-section-card h3 {
+      margin: 0 0 18px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #004d40;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sim-section-icon { font-style: normal; }
+    /* Equation */
+    .sim-equation-box {
+      background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+      border-radius: 10px;
+      padding: 16px 22px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-align: center;
+      color: #004d40;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+      border: 1px solid #b2dfdb;
+    }
+    .sim-eq-symbol { color: #00695c; font-weight: 700; }
+    .sim-eq-op { color: #37474f; }
+    /* Param grid */
+    .sim-param-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 10px;
+    }
+    .sim-param-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 8px 12px;
+    }
+    .sim-param-sym {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #00897b, #004d40);
+      color: white;
+      font-weight: 700;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .sim-param-desc { font-size: 0.85rem; color: #333; }
+    .sim-param-desc em { color: #00695c; }
+    /* Oscillator type cards */
+    .sim-types-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .sim-type-card {
+      border-radius: 12px;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .sim-type-free    { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border: 1px solid #a5d6a7; }
+    .sim-type-damped  { background: linear-gradient(135deg, #fff3e0, #ffe0b2); border: 1px solid #ffcc80; }
+    .sim-type-forced  { background: linear-gradient(135deg, #e3f2fd, #bbdefb); border: 1px solid #90caf9; }
+    .sim-type-icon { font-size: 1.8rem; margin-bottom: 8px; }
+    .sim-type-card h4 { margin: 0 0 8px; font-size: 1rem; font-weight: 700; color: #1a237e; }
+    .sim-type-card p { font-size: 0.85rem; color: #37474f; margin: 0 0 10px; line-height: 1.6; }
+    .sim-type-condition {
+      display: inline-block;
+      background: rgba(0,0,0,0.08);
+      border-radius: 6px;
+      padding: 3px 10px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #1a237e;
+      margin-bottom: 6px;
+    }
+    .sim-type-example { font-size: 0.78rem; color: #546e7a; font-style: italic; }
+    .sim-type-badges { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+    .sim-badge {
+      font-size: 0.72rem;
+      font-weight: 600;
+      border-radius: 20px;
+      padding: 3px 9px;
+    }
+    .sim-badge.under    { background: #c8e6c9; color: #1b5e20; }
+    .sim-badge.critical { background: #fff9c4; color: #f57f17; }
+    .sim-badge.over     { background: #ffcdd2; color: #b71c1c; }
+    /* Process flow */
+    .sim-flow { display: flex; flex-direction: column; gap: 0; }
+    .sim-flow-step {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      background: #f9fbe7;
+      border-radius: 12px;
+      padding: 16px 20px;
+      border: 1px solid #c5e1a5;
+    }
+    .sim-flow-arrow {
+      text-align: center;
+      color: #00897b;
+      font-size: 1.2rem;
+      padding: 4px 0;
+    }
+    .sim-flow-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #00897b, #004d40);
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .sim-flow-content h5 {
+      margin: 0 0 5px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #004d40;
+    }
+    .sim-flow-content p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #37474f;
+      line-height: 1.6;
+    }
+    /* Controls table */
+    .sim-controls-table { display: flex; flex-direction: column; gap: 2px; }
+    .sim-ctrl-row {
+      display: grid;
+      grid-template-columns: 1.6fr 1.2fr 2.5fr;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: 0.84rem;
+      background: #f5f5f5;
+      align-items: center;
+    }
+    .sim-ctrl-header {
+      background: linear-gradient(135deg, #00897b, #004d40);
+      color: white;
+      font-weight: 700;
+      border-radius: 8px 8px 0 0;
+    }
+    .sim-ctrl-row:not(.sim-ctrl-header):nth-child(even) { background: #e8f5e9; }
+    /* Tips */
+    .sim-tips-card { border-left-color: #f9a825; }
+    .sim-tips-card h3 { color: #e65100; }
+    .sim-tips-list { padding-left: 20px; margin: 0; }
+    .sim-tips-list li {
+      margin-bottom: 10px;
+      font-size: 0.88rem;
+      color: #37474f;
+      line-height: 1.65;
+    }
+    .sim-tips-list li strong { color: #004d40; }
+  </style>
+
+  <footer>
     <div class="foot1">
       <div class="fheading">
-        <h4>Community Links </h4> 
+        <h4>Community Links </h4>
       </div>
       <div class="fdes">
         <a href="https://sakshat.ac.in/">Sakshat Portal</a>
@@ -644,8 +1007,146 @@
 
   </footer>
 
-  <!-- Responsive Enhancement Script -->
-  <script src="responsive-enhancements.js"></script>
+  <!-- Two-column layout: plots LEFT, controls RIGHT -->
+  <script>
+    (function () {
+      var _observer = null;
+      var _layoutPending = false;
+      var _safetyInterval = null;
+
+      /* Check whether layout is correct (nodes in proper columns) */
+      function isLayoutBroken() {
+        var leftCol  = document.getElementById('sim-left-col');
+        var rightCol = document.getElementById('sim-right-col');
+        if (!leftCol || !rightCol) return true;
+
+        var plots     = document.getElementById('plots');
+        var animPanel = document.getElementById('animationPanel');
+        var ctrlPanel = document.getElementById('controlPanel');
+        if (!plots || !animPanel || !ctrlPanel) return true;
+
+        return (plots.parentNode !== leftCol ||
+                animPanel.parentNode !== rightCol ||
+                ctrlPanel.parentNode !== rightCol);
+      }
+
+      function applyLayout() {
+        _layoutPending = false;
+        var topFrame  = document.getElementById('_topFrame');
+        var plots     = document.getElementById('plots');
+        var animPanel = document.getElementById('animationPanel');
+        var ctrlPanel = document.getElementById('controlPanel');
+        if (!topFrame || !plots || !animPanel || !ctrlPanel) return;
+
+        /* Pause observer while we move nodes to avoid re-triggering */
+        if (_observer) _observer.disconnect();
+
+        /* Get or create wrapper */
+        var wrapper = document.getElementById('sim-layout-wrapper');
+        if (!wrapper) {
+          wrapper = document.createElement('div');
+          wrapper.id = 'sim-layout-wrapper';
+          var lc = document.createElement('div'); lc.id = 'sim-left-col';
+          var rc = document.createElement('div'); rc.id = 'sim-right-col';
+          wrapper.appendChild(lc);
+          wrapper.appendChild(rc);
+          topFrame.insertBefore(wrapper, topFrame.firstChild);
+        }
+
+        var leftCol  = document.getElementById('sim-left-col');
+        var rightCol = document.getElementById('sim-right-col');
+
+        if (plots.parentNode     !== leftCol)  leftCol.appendChild(plots);
+        if (animPanel.parentNode !== rightCol) rightCol.appendChild(animPanel);
+        if (ctrlPanel.parentNode !== rightCol) rightCol.appendChild(ctrlPanel);
+
+        /* Force SVG viewBox & overflow so plots scale properly (EJSS may reset these) */
+        var svgPlot = document.getElementById('plottingPanel');
+        var svgDraw = document.getElementById('drawingPanel');
+        if (svgPlot) {
+          svgPlot.setAttribute('viewBox', '0 0 975 480');
+          svgPlot.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+          svgPlot.style.overflow = 'visible';
+        }
+        if (svgDraw) {
+          svgDraw.setAttribute('viewBox', '0 0 975 120');
+          svgDraw.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+          svgDraw.style.overflow = 'visible';
+        }
+
+        /* Re-attach observer after DOM moves settle */
+        setTimeout(startObserver, 30);
+      }
+
+      function scheduleLayout() {
+        if (_layoutPending) return;
+        _layoutPending = true;
+        requestAnimationFrame(function () {
+          setTimeout(applyLayout, 20);
+        });
+      }
+
+      function startObserver() {
+        var topFrame = document.getElementById('_topFrame');
+        if (!topFrame) return;
+        if (_observer) _observer.disconnect();
+
+        _observer = new MutationObserver(function () {
+          /* Any DOM change inside _topFrame — check if layout broke */
+          if (isLayoutBroken()) {
+            scheduleLayout();
+          }
+        });
+
+        /* subtree:true catches EJSS rebuilding children of _topFrame too */
+        _observer.observe(topFrame, { childList: true, subtree: true });
+      }
+
+      function hookResetButtons() {
+        ['reset', 'resetTime', 'playPause', 'step'].forEach(function (id) {
+          var btn = document.getElementById(id);
+          if (btn && !btn._layoutHooked) {
+            btn.addEventListener('click', function () {
+              /* Re-apply layout immediately + schedule delayed retry */
+              scheduleLayout();
+              setTimeout(scheduleLayout, 100);
+              setTimeout(scheduleLayout, 300);
+              setTimeout(scheduleLayout, 600);
+            });
+            btn._layoutHooked = true;
+          }
+        });
+      }
+
+      /* Safety-net: periodic check every 400ms in case observer misses something */
+      function startSafetyCheck() {
+        if (_safetyInterval) return;
+        _safetyInterval = setInterval(function () {
+          if (isLayoutBroken()) {
+            applyLayout();
+          }
+        }, 400);
+      }
+
+      function init() {
+        applyLayout();
+        hookResetButtons();
+        startSafetyCheck();
+        /* Observer started inside applyLayout after initial placement */
+      }
+
+      /* Run as early as possible AND again on full load */
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+        window.addEventListener('load', function () {
+          applyLayout();
+          hookResetButtons();
+        });
+      } else {
+        init();
+      }
+    })();
+  </script>
 
 </body>
 

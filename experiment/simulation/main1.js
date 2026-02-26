@@ -712,6 +712,31 @@ function T06_SHO2(_topFrame,_libraryPath,_codebasePath, _inputParameters) {
 }); // HtmlView Page setting action 'OnDrag' for element 'cursor'
           _view.spring.linkProperty("SizeX",  function() { return x+11.0-0.75; } ); // HtmlView Page linking property 'SizeX' for element 'spring'
           _view.springBob.linkProperty("X",  function() { return x; }, function(_v) { x = _v; } ); // HtmlView Page linking property 'X' for element 'springBob'
+          // Enable double-click to stretch springBob (mass)
+          _view.springBob.setAction("OnDoubleClick", function(_data, _info) {
+            // Allow user to drag springBob horizontally to set new x0
+            var svg = document.getElementById('drawingPanel');
+            var rect = svg.getBoundingClientRect();
+            function onMouseMove(e) {
+              // Convert mouse X to SVG X coordinate
+              var pt = svg.createSVGPoint();
+              pt.x = e.clientX - rect.left;
+              pt.y = e.clientY - rect.top;
+              var svgP = pt.matrixTransform(svg.getScreenCTM().inverse());
+              // Clamp x to allowed range
+              var newX = Math.max(-11, Math.min(11, svgP.x));
+              x0 = newX;
+              x = newX;
+              _view.spring.setProperty('SizeX', x+11.0-0.75);
+              _model.update();
+            }
+            function onMouseUp() {
+              window.removeEventListener('mousemove', onMouseMove);
+              window.removeEventListener('mouseup', onMouseUp);
+            }
+            window.addEventListener('mousemove', onMouseMove);
+            window.addEventListener('mouseup', onMouseUp);
+          });
           _view.vArrow.linkProperty("SizeX",  function() { return v*0.3; } ); // HtmlView Page linking property 'SizeX' for element 'vArrow'
           _view.vArrow.linkProperty("X",  function() { return x; }, function(_v) { x = _v; } ); // HtmlView Page linking property 'X' for element 'vArrow'
           _view.vArrow.linkProperty("Visibility",  function() { return showVelocity; }, function(_v) { showVelocity = _v; } ); // HtmlView Page linking property 'Visibility' for element 'vArrow'

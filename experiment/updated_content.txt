@@ -1,0 +1,100 @@
+PROCEDURE
+The Procedure for the experiment is as follows:
+	To study the simple harmonic motion
+	Step 1: Set the damping factor (b) = 0.
+	Step 2: Set v_0 = 0 m/s.
+	Step 3: Drag the ball to the maximum starting position say, x_0 = 10.0 m and click the animation button.
+	Step 4: Observe the position graph as shown in Fig. 1 and wait until the animation ends.
+	Step 5: To get the position and velocity graph like Fig. 2, tick the velocity checkbox.
+Fig. 1. Graph representing S.H.M. motion (position vs time). (add image form images/procedure_fig1)
+Fig. 2. Graph representing S.H.M. motion (position vs velocity). (add image form images/procedure_fig2)
+
+	To study damped oscillatory motion
+	Step 1: Reset the simulation.
+	Step 2: Set v_0  = 0 m/sec.
+	Step 3: Change the damping factor (b) (say b = 0.5 or 2.8 or 3).
+	Step 4: Drag the ball to the maximum initial position, say x_0 = 10.0 m and click the play button.
+	Step 5: Perform the experiment for three different values of the damping factor (say b = 0.5, 2.8 and 3), resetting the simulation for each case.
+	Step 6: Repeat the entire procedure as done previously.
+Note: After selecting any damping checkbox (under-damped, over-damped and critically-damped), there is no need to manually set the value of b, as shown below.
+Case 1: Under-Damping
+Set the value of b < 2√2 (say b = 0.5)
+fig 3: part (A)add image form images/after adding
+Fig. 4. part(B)Graph representing under-damped oscillatory motion (position vs time). 
+
+part(c) image add from images/after adding
+part(D) Graph representing under-damped oscillatory motion (position vs velocity).
+
+Case 2: Critical-Damping
+Set the value of b < 2√2.
+part (E) image add from images/after adding
+part (F) image add from images/after adding
+part (g) image add from images/after adding
+part (H) image add from images/after adding
+
+Case 3: Over-Damping
+Set the value of b>2√2 (for example, b=3).
+part (I) image add from images/after adding
+part (J) image add from images/after adding (Fig. . Graph representing over-damped oscillatory motion (position vs time).)
+part (K) image add from images/after adding(Fig. . Graph representing over-damped oscillatory motion (position and velocity vs time).)
+
+Fig. . Graph representing over-damped oscillatory motion (position and velocity vs time).
+ In all the above the cases, observe the graph and wait till until animation ends.
+	To study forced oscillatory motion
+	Step 1: Reset the simulation again.
+	Step 2: Set the damping coefficient (b) > 2√2.
+	Step 3: Change the value of initial velocity v_0 = 2 m/sec
+	Step 4: Set value of driven angular frequency (ω) = 1.41
+	Step 5: Set some values of driven amplitude F_0 which will be the force for oscillation.	
+	Step 6: Drag the ball to the maximum starting position, say x_0 = 10.0 m and play the animation button.
+	Step 7: Observe the graph till the animation ends
+
+
+Fig. . Graph representing forced-oscillatory motion (position vs time).
+
+Fig.. Graph representing forced-oscillatory motion (position and velocity vs time graph).
+
+Perform the following experiments
+Experiment 1:
+Perform an experiment to calculate the value of the spring constant k for the cases described below. In each case, record the observations in the table and compute the value of k. Take the value of m = 1 kg in each case.
+Case 1: Free oscillator (simple harmonic motion) when (b = 0)
+	Set different values for x_0.
+	Keep other parameters = 0.
+	Record the value of time in each case.
+	Calculate the corresponding angular frequency.
+	Then compute k (spring constant) using the formula √(k/m) .
+Table 1.
+
+The mean ω: _________
+Computed value of k: _________
+Case 2: Under-Damped Oscillator when b < 2√2. (say b = 0.5)
+	Set different values for x_0
+	Set b < 2√2 and keep other parameters = 0.
+	Record the value of time in each case.
+	Calculate the corresponding angular frequency:
+
+The mean ω: _________
+Computed value of k: _________
+Case 2: Under-Damped Oscillator when b < 2√2. (say b = 0.5)
+	Set different values for x_0
+	Set b < 2√2 and keep other parameters = 0.
+	Record the value of time in each case.
+	Calculate the corresponding angular frequency:
+
+
+ ω=√(k/m-b^2/(4m^2 ))
+	Value of b used in the experiment: _________
+The mean ω = ________
+Computed value of k = _____________
+Case 3: Forced oscillator when b>2√2.
+	Set different values of Fo
+	Set driven angular frequency ωo = 1 rad/sec.
+	Obtain the value of amplitude by observing the graph each time.
+	Obtain the value of ω using the relation:
+A=F_0/(m√((ω^2-ω_0^2 )  +4γ^2 m^2 ))
+	Then compute k (spring constant) from the calculated mean value.
+
+Table 3.
+
+The mean ω = ________
+Computed value of k =_____________
