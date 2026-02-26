@@ -411,6 +411,8 @@ button#reset img {
 /* Left column — simulation canvases */
 #sim-left-col {
   flex: 0 0 auto !important;
+  width: 975px !important;
+  max-width: 100% !important;
   display: flex !important;
   flex-direction: column !important;
   gap: 0 !important;
@@ -548,6 +550,17 @@ button#reset img {
   #sim-left-col {
     width: 100% !important;
     max-width: 100% !important;
+  }
+  #plots {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 975 / 600 !important;
+  }
+  #plotpanel {
+    width: 100% !important;
+  }
+  #graphpanel {
+    width: 100% !important;
   }
   #sim-right-col {
     max-width: 100% !important;

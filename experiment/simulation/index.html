@@ -79,7 +79,7 @@
 
       <!-- Menu over the animation  -->
 
-      <div id="animationPanel" style="padding: 0px; margin: 0px auto; text-align: center; display: block;">
+      <div id="animationPanel" style="padding: 20px 20px; margin: 20px auto; text-align: left; display: flex; flex-wrap:wrap; gap:6px">
         <button id="dampingLabel"
           style="border-style: none; background: inherit; cursor: inherit; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px; visibility: visible;">Damping:</button>
         <div class="damping-controls">
@@ -108,8 +108,7 @@
         <div id="plotpanel"
           style="padding: 0px; margin: 0px auto; text-align: center; display: block; height: 80%; width: 975px;">
           <svg id="plottingPanel" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%"
-            viewBox="0 0 975 480" preserveAspectRatio="xMidYMid meet"
-            style="overflow: visible; cursor: default;">
+            style="overflow: hidden; cursor: default;">
             <defs>
 
             </defs>
@@ -326,12 +325,10 @@
           </svg>
         </div>
 
-
         <div id="graphpanel"
           style="padding: 0px; margin: 0px auto; text-align: center; display: block; height: 20%; width: 975px;">
           <svg id="drawingPanel" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%"
-            viewBox="0 0 975 120" preserveAspectRatio="xMidYMid meet"
-            style="overflow: visible; cursor: default;">
+            style="overflow: hidden; cursor: default;">
             <defs>
               <marker id="vArrow.end" viewBox="-2 -2 4.233337522834988 4.233337522834988" refX="0.11666876141749433"
                 refY="0.11666876141749433" markerUnits="userSpaceOnUse" markerWidth="4.233337522834988"
@@ -1060,18 +1057,17 @@
         if (animPanel.parentNode !== rightCol) rightCol.appendChild(animPanel);
         if (ctrlPanel.parentNode !== rightCol) rightCol.appendChild(ctrlPanel);
 
-        /* Force SVG viewBox & overflow so plots scale properly (EJSS may reset these) */
+        /* Ensure SVGs have no viewBox so EJSS pixel coords = SVG attribute coords.
+           This is essential for correct mouse-to-element coordinate mapping. */
         var svgPlot = document.getElementById('plottingPanel');
         var svgDraw = document.getElementById('drawingPanel');
         if (svgPlot) {
-          svgPlot.setAttribute('viewBox', '0 0 975 480');
-          svgPlot.setAttribute('preserveAspectRatio', 'xMidYMid meet');
-          svgPlot.style.overflow = 'visible';
+          svgPlot.removeAttribute('viewBox');
+          svgPlot.removeAttribute('preserveAspectRatio');
         }
         if (svgDraw) {
-          svgDraw.setAttribute('viewBox', '0 0 975 120');
-          svgDraw.setAttribute('preserveAspectRatio', 'xMidYMid meet');
-          svgDraw.style.overflow = 'visible';
+          svgDraw.removeAttribute('viewBox');
+          svgDraw.removeAttribute('preserveAspectRatio');
         }
 
         /* Re-attach observer after DOM moves settle */
