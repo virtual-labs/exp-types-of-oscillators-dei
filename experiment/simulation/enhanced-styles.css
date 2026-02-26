@@ -10,25 +10,29 @@ body {
 
 /* Responsive canvas sizing */
 #plots {
-  height: auto !important;
-  width: 100% !important;
-  max-width: 975px !important;
+  height: 600px !important;
+  width: 975px !important;
+  max-width: 100% !important;
   margin: 20px auto !important;
-  aspect-ratio: 975 / 600;
   box-sizing: border-box !important;
 }
 
 #plotpanel {
   height: 80% !important;
-  width: 100% !important;
-  max-width: 975px !important;
+  width: 975px !important;
+  max-width: 100% !important;
+}
+
+#graphpanel {
+  width: 975px !important;
+  max-width: 100% !important;
 }
 
 #plottingPanel,
 #drawingPanel {
   width: 100% !important;
   height: 100% !important;
-  overflow: visible !important;
+  overflow: hidden !important;
 }
 
 /* Background gradient */

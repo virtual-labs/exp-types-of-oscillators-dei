@@ -6,7 +6,9 @@ Simple harmonic oscillators exhibit periodic motion with constant amplitude, whi
 
 Simple harmonic motion (SHM) is a type of oscillating motion. A pendulum or an object hanging from a spring will oscillate harmonically when there is a small deviation from its equilibrium or rest state. A restoring force proportionate to x is created when slight displacement x occurs from the equilibrium position. This force always acts in the opposite direction of the displacement, towards the equilibrium position.
 
-$$F = -kx \qquad \qquad (1)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>F</em> = &minus;<em>kx</em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1)
+</div>
 
 where k is the spring constant (force constant).
 
@@ -26,7 +28,10 @@ A mass attached to a spring fixed to a rigid wall executes SHM when displaced fr
 
 The motion of an oscillating liquid column in a U-tube is SHM with time period:
 
-$$T = 2\pi\sqrt{\frac{h}{g}} \qquad \qquad (2)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>T</em> = 2&pi; &radic;<span style="text-decoration:overline; padding:0 3px;"><em>h</em>&thinsp;/&thinsp;<em>g</em></span>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2)
+</div>
 
 where h is the height of the liquid column in one arm at the equilibrium position of the liquid and g is the acceleration due to gravity.
 
@@ -40,7 +45,10 @@ Another example is that of an LC electrical circuit — an inductance L connecte
 
 The general governing equation for simple harmonic motion is:
 
-$$m\ddot{x} + b\dot{x} + kx = F_0 \sin(\omega t + \phi) \qquad \qquad (3)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>m</em>&#x1E8D; + <em>b</em>&#x1E8B; + <em>kx</em> = <em>F</em><sub>0</sub> sin(<em>&omega;t</em> + <em>&phi;</em>)
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (3)
+</div>
 
 where:
 
@@ -68,15 +76,23 @@ In this type of motion, both the damping factor (b) and the forcing frequency (F
 
 Thus, equation (3) becomes:
 
-$$m\ddot{x} + kx = 0 \qquad \qquad (4)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>m</em>&#x1E8D; + <em>kx</em> = 0
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (4)
+</div>
 
 where the solution of the equation is:
 
-$$x(t) = A\cos(\omega_0 t + \varphi) \qquad \qquad (5)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>x</em>(<em>t</em>) = <em>A</em> cos(<em>&omega;</em><sub>0</sub><em>t</em> + <em>&phi;</em>)
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (5)
+</div>
 
-which represents simple harmonic motion. Here $\omega_0$ is the natural angular frequency of the system:
+which represents simple harmonic motion. Here &omega;<sub>0</sub> is the natural angular frequency of the system:
 
-$$\omega_0 = \sqrt{\frac{k}{m}}$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>&omega;</em><sub>0</sub> = &radic;<span style="text-decoration:overline; padding:0 3px;"><em>k</em>&thinsp;/&thinsp;<em>m</em></span>
+</div>
 
 ---
 
@@ -88,30 +104,51 @@ When a moving particle interacts with resistive forces like air or friction, it 
 
 If the damping force is proportional to the velocity v with a damping constant b, then:
 
-$$F_{damping} = -bv \qquad \qquad (6)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>F</em><sub>damping</sub> = &minus;<em>bv</em>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (6)
+</div>
 
 The equation of motion (3) becomes:
 
-$$m\ddot{x} + b\dot{x} + kx = 0 \qquad \qquad (7)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>m</em>&#x1E8D; + <em>b</em>&#x1E8B; + <em>kx</em> = 0
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (7)
+</div>
 
 The solution of equation (7) is:
 
-$$x(t) = Ae^{-\gamma t}\cos(\omega t + \varphi) \qquad \qquad (8)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>x</em>(<em>t</em>) = <em>A</em> <em>e</em><sup>&minus;<em>&gamma;t</em></sup> cos(<em>&omega;t</em> + <em>&phi;</em>)
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (8)
+</div>
 
-where $\gamma = \dfrac{b}{2m}$, and:
+where &gamma; = <em>b</em>&thinsp;/&thinsp;(2<em>m</em>), and:
 
 - **b** : Damping factor (Ns/m)
 - **m** : Mass of the ball (kg)
 
 The amplitude is given by:
 
-$$A = \frac{F_0}{m\sqrt{(\omega^2 - \omega_0^2)^2 + 4\gamma^2\omega^2}} \qquad \qquad (9)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>A</em> =
+  <span style="display:inline-block; vertical-align:middle; text-align:center; line-height:1.4;">
+    <span style="display:block; border-bottom:1.5px solid; padding:0 6px 2px;"><em>F</em><sub>0</sub></span>
+    <span style="display:block; padding:2px 6px 0;"><em>m</em> &radic;<span style="text-decoration:overline; padding:0 2px;">(&omega;<sup>2</sup> &minus; &omega;<sub>0</sub><sup>2</sup>)<sup>2</sup> + 4&gamma;<sup>2</sup>&omega;<sup>2</sup></span></span>
+  </span>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9)
+</div>
 
-$\omega_0$ is the natural angular frequency of the system and $\omega$ is the angular frequency of the damped oscillator:
+&omega;<sub>0</sub> is the natural angular frequency of the system and &omega; is the angular frequency of the damped oscillator:
 
-$$\omega = \sqrt{\frac{k}{m} - \frac{b^2}{4m^2}} \qquad \qquad (10)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>&omega;</em> = &radic;<span style="text-decoration:overline; padding:0 3px;"><em>k</em>&thinsp;/&thinsp;<em>m</em> &minus; <em>b</em><sup>2</sup>&thinsp;/&thinsp;(4<em>m</em><sup>2</sup>)</span>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (10)
+</div>
 
-$$b^2 = 4km$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>b</em><sup>2</sup> = 4<em>km</em>
+</div>
 
 ---
 
@@ -123,15 +160,25 @@ When damping is small, the system vibrates at first approximately as if there we
 
 **Example:** A swinging pendulum decreasing in amplitude until it comes to a stop.
 
-**Under damped condition:** $b < 2\sqrt{2}$
+**Under damped condition:** b &lt; 2&radic;<span style="text-decoration:overline;">2</span>
 
-$$x(t) = Ae^{-\gamma t}\cos(\omega t + \phi) \qquad \qquad (11)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>x</em>(<em>t</em>) = <em>A</em> <em>e</em><sup>&minus;<em>&gamma;t</em></sup> cos(<em>&omega;t</em> + <em>&phi;</em>)
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (11)
+</div>
 
-where $\gamma = \dfrac{b}{2m}$, b = Damping factor, m = Mass of the ball (kg).
+where &gamma; = <em>b</em>&thinsp;/&thinsp;(2<em>m</em>), b = Damping factor, m = Mass of the ball (kg).
 
 The amplitude is given by:
 
-$$A = \frac{F_0}{m\sqrt{(\omega^2 - \omega_0^2)^2 + 4\gamma^2\omega^2}} \qquad \qquad (12)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>A</em> =
+  <span style="display:inline-block; vertical-align:middle; text-align:center; line-height:1.4;">
+    <span style="display:block; border-bottom:1.5px solid; padding:0 6px 2px;"><em>F</em><sub>0</sub></span>
+    <span style="display:block; padding:2px 6px 0;"><em>m</em> &radic;<span style="text-decoration:overline; padding:0 2px;">(&omega;<sup>2</sup> &minus; &omega;<sub>0</sub><sup>2</sup>)<sup>2</sup> + 4&gamma;<sup>2</sup>&omega;<sup>2</sup></span></span>
+  </span>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (12)
+</div>
 
 ---
 
@@ -141,7 +188,7 @@ When a critically damped oscillator is displaced from the equilibrium, it return
 
 **Example:** Car suspension systems prevent the car from oscillating after travelling over a bump in the road.
 
-**Critically damped condition:** $b = 2\sqrt{2}$ (or ≈ 2.8)
+**Critically damped condition:** b = 2&radic;<span style="text-decoration:overline;">2</span> (or ≈ 2.8)
 
 ---
 
@@ -153,9 +200,12 @@ When a heavily damped oscillator is displaced from the equilibrium, it takes a l
 
 **Over damped condition:** b > 2.8
 
-$$x(t) = Ae^{-\gamma t}\cos(\omega t + \phi) \qquad \qquad (13)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>x</em>(<em>t</em>) = <em>A</em> <em>e</em><sup>&minus;<em>&gamma;t</em></sup> cos(<em>&omega;t</em> + <em>&phi;</em>)
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (13)
+</div>
 
-where $\gamma = \dfrac{b}{2m}$
+where &gamma; = <em>b</em>&thinsp;/&thinsp;(2<em>m</em>)
 
 ---
 
@@ -167,7 +217,10 @@ Forced oscillations occur when an oscillating system is driven by a periodic ext
 
 The governing equation is:
 
-$$m\ddot{x} + b\dot{x} + kx = F_0 \sin(\omega t + \phi) \qquad \qquad (14)$$
+<div style="text-align:center; margin:1.2em 0; font-family:'Times New Roman',serif; font-size:1.1em;">
+  <em>m</em>&#x1E8D; + <em>b</em>&#x1E8B; + <em>kx</em> = <em>F</em><sub>0</sub> sin(<em>&omega;t</em> + <em>&phi;</em>)
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (14)
+</div>
 
 where:
 - **ω** : Angular frequency for forced oscillations
