@@ -8,16 +8,27 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Increase canvas size by 1.5x */
+/* Responsive canvas sizing */
 #plots {
-  height: 600px !important; /* 1.5x of original 400px */
-  width: 975px !important; /* 1.5x of original 650px */
+  height: auto !important;
+  width: 100% !important;
+  max-width: 975px !important;
   margin: 20px auto !important;
+  aspect-ratio: 975 / 600;
+  box-sizing: border-box !important;
 }
 
 #plotpanel {
   height: 80% !important;
-  width: 975px !important; /* 1.5x of original 650px */
+  width: 100% !important;
+  max-width: 975px !important;
+}
+
+#plottingPanel,
+#drawingPanel {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: visible !important;
 }
 
 /* Background gradient */

@@ -222,3 +222,369 @@ div[style*="position:absolute; right:50px"] ul {
   font-family: 'Poppins', sans-serif !important;
   line-height: 1.6 !important;
 }
+
+/* ============================================================
+   CONTROL PANEL — STYLISH INPUTS, SLIDERS & BUTTONS
+   ============================================================ */
+
+/* --- Hide number-input spinner arrows (Chrome / Safari / Edge) --- */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* --- Hide number-input spinner arrows (Firefox) --- */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* --- Stylish number inputs --- */
+input[type="number"]#displacementField,
+input[type="number"]#bField,
+input[type="number"]#v0Field,
+input[type="number"]#wField,
+input[type="number"]#F0Field {
+  width: 56px !important;
+  padding: 5px 8px !important;
+  border: 2px solid #b2dfdb !important;
+  border-radius: 8px !important;
+  background: linear-gradient(135deg, #ffffff, #f0fdfc) !important;
+  color: #00695c !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 0.85em !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  outline: none !important;
+  box-shadow: 0 2px 6px rgba(0, 137, 123, 0.15) !important;
+  transition: border-color 0.25s, box-shadow 0.25s !important;
+  vertical-align: middle !important;
+}
+
+input[type="number"]#displacementField:focus,
+input[type="number"]#bField:focus,
+input[type="number"]#v0Field:focus,
+input[type="number"]#wField:focus,
+input[type="number"]#F0Field:focus {
+  border-color: #00897b !important;
+  box-shadow: 0 0 0 3px rgba(0, 137, 123, 0.2) !important;
+}
+
+/* --- Larger, modern range sliders (track) --- */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px !important;
+  border-radius: 4px !important;
+  background: linear-gradient(to right, #00897b, #b2dfdb) !important;
+  outline: none !important;
+  cursor: pointer !important;
+  transition: background 0.3s !important;
+}
+
+/* Chrome / Safari / Edge thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px !important;
+  height: 22px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #00897b, #004d40) !important;
+  border: 3px solid #ffffff !important;
+  box-shadow: 0 2px 6px rgba(0, 77, 64, 0.4) !important;
+  cursor: grab !important;
+  transition: transform 0.15s, box-shadow 0.15s !important;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  cursor: grabbing !important;
+  transform: scale(1.2) !important;
+  box-shadow: 0 4px 12px rgba(0, 77, 64, 0.5) !important;
+}
+
+/* Firefox thumb */
+input[type="range"]::-moz-range-thumb {
+  width: 22px !important;
+  height: 22px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #00897b, #004d40) !important;
+  border: 3px solid #ffffff !important;
+  box-shadow: 0 2px 6px rgba(0, 77, 64, 0.4) !important;
+  cursor: grab !important;
+}
+
+/* Make the slider wrapper taller so the thumb doesn't get clipped */
+#bSlider.div2,
+#v0Slider.div2,
+#wSlider.div2,
+#F0Slider.div2,
+div[id$="Slider.div2"] {
+  padding: 6px 0 !important;
+}
+
+/* --- Unit label buttons (b, v₀, ω, F₀ unit tags) --- */
+button#bLabel2,
+button#v0Label2,
+button#wLabel2,
+button#F0Label2,
+button#displacementLabel2 {
+  display: inline-block !important;
+  padding: 4px 9px !important;
+  margin-left: 4px !important;
+  background: linear-gradient(135deg, #e0f2f1, #b2dfdb) !important;
+  color: #00695c !important;
+  border: 1px solid #80cbc4 !important;
+  border-radius: 6px !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 0.78em !important;
+  font-weight: 600 !important;
+  box-shadow: 0 1px 4px rgba(0, 137, 123, 0.15) !important;
+  cursor: default !important;
+  vertical-align: middle !important;
+  transform: none !important;
+}
+
+/* --- Parameter label buttons (b:, v₀:, ω:, F₀:) --- */
+button#bLabel,
+button#v0Label,
+button#wLabel,
+button#F0Label,
+button#displacementLabel {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 0.9em !important;
+  font-weight: 700 !important;
+  color: #004d40 !important;
+  min-width: 28px !important;
+  transform: none !important;
+}
+
+/* --- Play / Pause / Reset action buttons --- */
+button#playPauseButton,
+button#reset {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #00897b, #00695c) !important;
+  border: none !important;
+  box-shadow: 0 3px 8px rgba(0, 77, 64, 0.35) !important;
+  cursor: pointer !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+  padding: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  vertical-align: middle !important;
+}
+
+button#playPauseButton:hover,
+button#reset:hover {
+  transform: scale(1.12) translateY(0) !important;
+  box-shadow: 0 5px 14px rgba(0, 77, 64, 0.45) !important;
+}
+
+button#playPauseButton img,
+button#reset img {
+  filter: brightness(0) invert(1) !important; /* white icons */
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* ============================================================
+   TWO-COLUMN SIMULATION LAYOUT
+   Left  → plots + spring-mass animation canvas
+   Right → damping controls + parameter sliders
+   ============================================================ */
+
+#sim-layout-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  gap: 28px !important;
+  padding: 16px 12px !important;
+  box-sizing: border-box !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+/* Left column — simulation canvases */
+#sim-left-col {
+  flex: 0 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+}
+
+/* Right column — all controls */
+#sim-right-col {
+  flex: 1 1 300px !important;
+  min-width: 280px !important;
+  max-width: 400px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 18px !important;
+  padding-top: 8px !important;
+}
+
+/* Make animationPanel and controlPanel fill the right column nicely */
+#sim-right-col #animationPanel {
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9) !important;
+  border-radius: 14px !important;
+  padding: 14px 18px !important;
+  box-shadow: 0 4px 14px rgba(0,105,92,0.12) !important;
+  border: 1px solid #c8e6c9 !important;
+}
+
+#sim-right-col #controlPanel {
+  background: linear-gradient(135deg, #e0f7fa, #f9fbe7) !important;
+  border-radius: 14px !important;
+  padding: 16px 18px !important;
+  box-shadow: 0 4px 14px rgba(0,105,92,0.12) !important;
+  border: 1px solid #b2dfdb !important;
+  width: auto !important;
+  text-align: left !important;
+}
+
+/* Right-column label headings */
+#sim-right-col #animationPanel #dampingLabel {
+  display: block !important;
+  font-size: 0.85em !important;
+  font-weight: 700 !important;
+  color: #004d40 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 10px !important;
+  border-bottom: 2px solid #80cbc4 !important;
+  padding-bottom: 6px !important;
+}
+
+/* Stack slider panels vertically inside the right column */
+#sim-right-col #parameterPanelTop,
+#sim-right-col #parameterPanelBottom {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+#sim-right-col .slider-panel,
+#sim-right-col #wSliderPanel,
+#sim-right-col #F0SliderPanel {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 6px !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+/* Make sliders fill available width in right column */
+#sim-right-col #bSlider,
+#sim-right-col #v0Slider,
+#sim-right-col #wSlider,
+#sim-right-col #F0Slider {
+  flex: 1 1 auto !important;
+  min-width: 100px !important;
+  width: auto !important;
+}
+
+#sim-right-col #bSlider .div2,
+#sim-right-col #v0Slider .div2,
+#sim-right-col #wSlider .div2,
+#sim-right-col #F0Slider .div2,
+#sim-right-col div[id$='Slider.div2'] {
+  width: 100% !important;
+}
+
+#sim-right-col input[type='range'] {
+  width: 100% !important;
+}
+
+/* ─── Damping fieldset spacing & labels ─── */
+.damping-controls {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 12px !important;
+  position: static !important;
+  margin-top: 10px !important;
+  align-items: center !important;
+}
+
+.damping-controls fieldset {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  padding: 6px 12px !important;
+  margin: 0 !important;
+  border: 1px solid #b2dfdb !important;
+  border-radius: 8px !important;
+  background: white !important;
+  cursor: pointer !important;
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s !important;
+}
+
+.damping-controls fieldset:hover {
+  background: #e0f2f1 !important;
+  border-color: #00897b !important;
+  box-shadow: 0 2px 8px rgba(0,137,123,0.15) !important;
+}
+
+.damping-controls label {
+  cursor: pointer !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  color: #004d40 !important;
+  user-select: none !important;
+}
+
+/* ─── Responsive layouts ─── */
+
+/* Stack on medium screens */
+@media (max-width: 1100px) {
+  #sim-layout-wrapper {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  #sim-left-col {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  #sim-right-col {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+/* Mobile-friendly scaling */
+@media (max-width: 768px) {
+  #sim-layout-wrapper {
+    padding: 8px 6px !important;
+    gap: 14px !important;
+  }
+  #sim-left-col {
+    width: 100% !important;
+  }
+  #plots {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  #plotpanel {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  #sim-right-col {
+    min-width: unset !important;
+    width: 100% !important;
+    gap: 12px !important;
+  }
+  .damping-controls {
+    gap: 6px 8px !important;
+  }
+  .damping-controls fieldset {
+    padding: 5px 8px !important;
+  }
+  .damping-controls label {
+    font-size: 0.78rem !important;
+  }
+}
