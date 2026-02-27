@@ -93,7 +93,7 @@
 &omega; = &radic;(k/m) &rArr; k = m&omega;&sup2;</p></li>
 </ol>
 
-<p><b>Table 1: Observations for Free Oscillator (b = 0, v<sub>0</sub> = 0, m = 1 kg)</b></p>
+<p><b>Table 1: Test values for Free Oscillator (b = 0, v<sub>0</sub> = 0, m = 1 kg)</b></p>
 <table style="width:80%; border-collapse: collapse; text-align: center;" border="1" cellpadding="8">
 <tr style="background-color:#e0f2f1;">
 <th style="width:5%">S.No</th>
@@ -165,7 +165,7 @@
 
 <p><b>Value of b used in the experiment: 0.5 Ns/m</b></p>
 
-<p><b>Table 2: Observations for Under-Damped Oscillator (b = 0.5, v<sub>0</sub> = 0, m = 1 kg)</b></p>
+<p><b>Table 2: Test values for Under-Damped Oscillator (b = 0.5, v<sub>0</sub> = 0, m = 1 kg)</b></p>
 <table style="width:80%; border-collapse: collapse; text-align: center;" border="1" cellpadding="8">
 <tr style="background-color:#e0f2f1;">
 <th style="width:5%">S.No</th>
@@ -238,7 +238,7 @@ A = F<sub>0</sub> / &radic;((k &minus; m&omega;&sup2;)&sup2; + b&sup2;&omega;&su
 
 <p><b>Parameters: b = 3 Ns/m, &omega;<sub>drive</sub> = 1 rad/s, x<sub>0</sub> = 0 m, v<sub>0</sub> = 0 m/s</b></p>
 
-<p><b>Table 3: Observations for Forced Oscillator (b = 3, &omega; = 1 rad/s, m = 1 kg)</b></p>
+<p><b>Table 3: Test values for Forced Oscillator (b = 3, &omega; = 1 rad/s, m = 1 kg)</b></p>
 <table style="width:80%; border-collapse: collapse; text-align: center;" border="1" cellpadding="8">
 <tr style="background-color:#e0f2f1;">
 <th style="width:5%">S.No</th>
