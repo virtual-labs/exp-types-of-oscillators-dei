@@ -228,7 +228,7 @@
 <p><u>Case 3:</u> Forced oscillator when <b>b &gt; 2&radic;2</b> (say b = 3)</p>
 <ol>
 <li><p>Set different values for F<sub>0</sub>.</p></li>
-<li><p>Set driven angular frequency &omega; = 1 rad/s.</p></li>
+<li><p>Set driven angular frequency &omega; = 1.41 rad/s.</p></li>
 <li><p>Obtain the value of steady-state amplitude (A) by observing the graph each time.</p></li>
 <li><p>Obtain the value of natural frequency &omega;<sub>0</sub> using the relation:</p>
 <p><img src="images/eq3.png" alt="forced oscillation amplitude formula" width="400px"><br>
@@ -236,50 +236,50 @@ A = F<sub>0</sub> / &radic;((k &minus; m&omega;&sup2;)&sup2; + b&sup2;&omega;&su
 <li><p>Then compute k (spring constant) from the calculated mean value of &omega;<sub>0</sub>.</p></li>
 </ol>
 
-<p><b>Parameters: b = 3 Ns/m, &omega;<sub>drive</sub> = 1 rad/s, x<sub>0</sub> = 0 m, v<sub>0</sub> = 0 m/s</b></p>
+<p><b>Parameters: b = 3 Ns/m, &omega;<sub>drive</sub> = 1.41 rad/s, x<sub>0</sub> = 10 m, v<sub>0</sub> = 2 m/s</b></p>
 
-<p><b>Table 3: Test values for Forced Oscillator (b = 3, &omega; = 1 rad/s, m = 1 kg)</b></p>
+<p><b>Table 3: Test values for Forced Oscillator (b = 3, &omega; = 1.41 rad/s, m = 1 kg)</b></p>
 <table style="width:80%; border-collapse: collapse; text-align: center;" border="1" cellpadding="8">
 <tr style="background-color:#e0f2f1;">
-<th style="width:5%">S.No</th>
-<th style="width:12%">F<sub>0</sub> (N)</th>
-<th style="width:15%">A (m)</th>
-<th style="width:20%">&omega;<sub>0</sub> (rad/s)</th>
+<th style="width:5%; text-align: center;">S.No</th>
+<th style="width:12%; text-align: center;">F<sub>0</sub> (N)</th>
+<th style="width:15%; text-align: center;">A (m)</th>
+<th style="width:20%; text-align: center;">&omega;<sub>0</sub> (rad/s)</th>
 </tr>
 <tr>
 <td>1</td>
 <td>1.0</td>
-<td>0.316</td>
+<td>0.236</td>
 <td>1.414</td>
 </tr>
 <tr>
 <td>2</td>
 <td>2.0</td>
-<td>0.632</td>
+<td>0.473</td>
 <td>1.414</td>
 </tr>
 <tr>
 <td>3</td>
 <td>3.0</td>
-<td>0.949</td>
+<td>0.709</td>
 <td>1.414</td>
 </tr>
 <tr>
 <td>4</td>
 <td>5.0</td>
-<td>1.581</td>
+<td>1.182</td>
 <td>1.414</td>
 </tr>
 <tr>
 <td>5</td>
 <td>8.0</td>
-<td>2.530</td>
+<td>1.891</td>
 <td>1.414</td>
 </tr>
 <tr>
 <td>6</td>
 <td>10.0</td>
-<td>3.162</td>
+<td>2.364</td>
 <td>1.414</td>
 </tr>
 </table>
