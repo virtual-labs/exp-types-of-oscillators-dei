@@ -1,0 +1,1 @@
+To study the types of oscillators: Simple harmonic, Damped and Forced oscillators. 

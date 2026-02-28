@@ -1,0 +1,175 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which of the following oscillations is considered a free oscillation?",
+      "answers": {
+        "a": "Simple Harmonic Motion (SHM)",
+        "b": "Damped Oscillation",
+        "c": "Forced Oscillation",
+        "d": "Critical Damping"
+      },
+      "explanations": {
+        "a": "Correct. SHM is the natural oscillation without external force or damping.",
+        "b": "Not correct. Damped oscillation loses energy over time.",
+        "c": "Not correct. Forced oscillation requires external driving force.",
+        "d": "Not correct. Critical damping prevents oscillation."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. In damped oscillations, energy of the system:",
+      "answers": {
+        "a": "Remains constant",
+        "b": "Gradually decreases with time",
+        "c": "Increases continuously",
+        "d": "Becomes infinite"
+      },
+      "explanations": {
+        "a": "Not correct. Energy cannot remain constant due to damping.",
+        "b": "Correct. Energy is lost due to friction or resistance.",
+        "c": "Not correct. No system can gain energy continuously without external source.",
+        "d": "Not correct. Infinite energy is not possible."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Which type of damping allows the system to return to equilibrium in the shortest possible time without oscillating?",
+      "answers": {
+        "a": "Under damping",
+        "b": "Over damping",
+        "c": "Critical damping",
+        "d": "Free oscillation"
+      },
+      "explanations": {
+        "a": "Not correct. Under damping produces oscillations.",
+        "b": "Not correct. Over damping takes longer to reach equilibrium.",
+        "c": "Correct. Critical damping achieves fastest return without oscillations.",
+        "d": "Not correct. Free oscillation has no damping."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "4. In forced oscillation, when the frequency of the driving force matches the natural frequency of the system, the phenomenon is called:",
+      "answers": {
+        "a": "Attenuation",
+        "b": "Resonance",
+        "c": "Critical damping",
+        "d": "Superposition"
+      },
+      "explanations": {
+        "a": "Not correct. Attenuation refers to reduction of amplitude.",
+        "b": "Correct. Resonance occurs when driving and natural frequencies match.",
+        "c": "Not correct. Critical damping is related to stopping oscillations.",
+        "d": "Not correct. Superposition refers to addition of waves."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Which graph best represents displacement versus time for a free simple harmonic oscillator?",
+      "answers": {
+        "a": "Straight line with positive slope",
+        "b": "Exponential decay curve",
+        "c": "Sine or cosine wave",
+        "d": "Parabolic curve"
+      },
+      "explanations": {
+        "a": "Not correct. Straight line indicates uniform motion, not oscillation.",
+        "b": "Not correct. Exponential decay represents damping.",
+        "c": "Correct. SHM is represented by sine or cosine wave.",
+        "d": "Not correct. Parabolic is for uniformly accelerated motion."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. For a damped oscillator, the condition for under-damping is:",
+      "answers": {
+        "a": "b > 2√(km)",
+        "b": "b = 2√(km)",
+        "c": "b < 2√(km)",
+        "d": "b = 0"
+      },
+      "explanations": {
+        "a": "Incorrect. This describes over-damping.",
+        "b": "Incorrect. This is critical damping.",
+        "c": "Correct. Under-damping occurs when b < 2√(km), allowing oscillations with decaying amplitude.",
+        "d": "Incorrect. b = 0 means no damping at all (free oscillation)."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. The displacement of an under-damped oscillator is given by x(t) = Ae^(-γt)cos(ωt + φ). What does γ represent?",
+      "answers": {
+        "a": "Natural angular frequency",
+        "b": "Damping coefficient = b/2m",
+        "c": "Spring constant per unit mass",
+        "d": "Driving angular frequency"
+      },
+      "explanations": {
+        "a": "Incorrect. Natural angular frequency is ω₀ = √(k/m).",
+        "b": "Correct. γ = b/2m is the damping coefficient controlling the rate of amplitude decay.",
+        "c": "Incorrect. Spring constant per unit mass is k/m = ω₀².",
+        "d": "Incorrect. The driving frequency appears in forced oscillation equations."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "8. In forced oscillation, the steady-state amplitude is maximum when:",
+      "answers": {
+        "a": "Driving frequency ω is zero",
+        "b": "Driving frequency ω equals twice the natural frequency ω₀",
+        "c": "Driving frequency ω is close to the natural frequency ω₀ (resonance)",
+        "d": "Damping factor b is very large"
+      },
+      "explanations": {
+        "a": "Incorrect. Zero driving frequency gives no oscillation.",
+        "b": "Incorrect. Double the natural frequency does not produce maximum amplitude.",
+        "c": "Correct. Resonance occurs when ω ≈ ω₀, maximising the amplitude.",
+        "d": "Incorrect. Large damping suppresses amplitude even at resonance."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "9. Which of the following is a real-world example of resonance?",
+      "answers": {
+        "a": "A car shock absorber returning smoothly to equilibrium",
+        "b": "A wineglass shattering when sound at its resonant frequency is played",
+        "c": "A pendulum clock slowing down over time",
+        "d": "A spring stretching under constant load"
+      },
+      "explanations": {
+        "a": "Incorrect. That is an example of critical damping.",
+        "b": "Correct. The wineglass resonates at its natural frequency, causing large amplitude vibrations that shatter it.",
+        "c": "Incorrect. That is an example of damped oscillation.",
+        "d": "Incorrect. That is static deformation, not oscillation."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "10. In coupled oscillators, energy exchange occurs because:",
+      "answers": {
+        "a": "Both oscillators have infinite energy",
+        "b": "The two systems are connected allowing transfer of energy between them",
+        "c": "One oscillator always remains stationary",
+        "d": "External periodic force acts on each oscillator independently"
+      },
+      "explanations": {
+        "a": "Incorrect. No physical system has infinite energy.",
+        "b": "Correct. Coupled oscillators are connected such that energy can be transferred back and forth between them.",
+        "c": "Incorrect. Both oscillators exchange energy and motion.",
+        "d": "Incorrect. External force is not required; coupling enables energy transfer."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    }
+  ]
+}
